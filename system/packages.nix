@@ -39,6 +39,11 @@
     wlroots
     nwg-displays
 
+    # Apps
+    kitty
+    yazi
+    hyprshot
+
     # Build
     cmake
     gcc

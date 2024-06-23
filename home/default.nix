@@ -22,13 +22,13 @@
 
   # List of user programs
   home.packages = with pkgs; [
-    grimblast
     alacritty
     firefox
     pavucontrol
     jq
     signal-desktop
     eza
+    tldr
     glow
     zathura
     libreoffice-qt
@@ -38,6 +38,7 @@
     pulseaudio
     gimp
     wl-clipboard
+    imv
   ];
 
   programs.git = {

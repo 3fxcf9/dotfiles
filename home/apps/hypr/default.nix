@@ -22,7 +22,7 @@
         kb_layout = ergol
 
         numlock_by_default = yes
-        kb_options = ctrl:nocaps
+        kb_options = ctrl:nocaps,altwin:swap_lalt_lwin
 
         follow_mouse = 1
 
@@ -81,7 +81,7 @@
         disable_hyprland_logo = true
       }
 
-      $MOD = ALT
+      $MOD = SUPER
 
       bind = $MOD, SPACE, exec, tofi-drun
       bind = $MOD, RETURN, exec, alacritty
@@ -93,7 +93,7 @@
       bind = $MOD, M, exit,
       bind = $MOD, V, togglefloating,
       bind = $MOD, U, togglesplit,
-      bind = $MOD SHIFT, S, exec, grimblast copy area # Screenshot
+      bind = $MOD SHIFT, S, exec, hyprshot -m region --clipboard-only # Screenshot
 
       # Multimonitor
       bind = $MOD, B, exec, hyprctl dispatch movecurrentworkspacetomonitor -1
