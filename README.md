@@ -3,6 +3,17 @@
 ## TODO
 
 - Create a uniform color scheme
-- Fix low battery warning
+- Low battery warning
 - Fix Librewolf theme
-- Store username in a variable
+- Hibernation
+- Lock screen
+- Power menu
+- Switch to kitty
+- Secret management
+- Librewolf default browser
+- RTL-SDR
+
+## Thanks
+
+- [JosiahABrown/nixdots](https://github.com/JosiahABrown/nixdots)
+- [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config)

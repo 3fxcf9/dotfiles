@@ -4,6 +4,16 @@
   pkgs,
   ...
 }: {
+  home.packages = with pkgs; [
+    wl-clipboard
+    tofi
+    wayland-protocols
+    wayland-utils
+    wlroots
+    nwg-displays
+    hyprshot
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;

@@ -10,9 +10,10 @@
   };
   home.sessionVariables.FZF_DEFAULT_OPTS = "--bind=ctrl-r:down";
 
+  # Prompt
   programs.starship = {enable = true;};
 
-  # ZSH
+  # Zsh
   programs.zsh = {
     enable = true;
     dotDir = ".config/zsh";
