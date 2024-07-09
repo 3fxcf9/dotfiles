@@ -11,7 +11,6 @@
 - Switch to kitty
 - Secret management
 - Librewolf default browser
-- RTL-SDR
 
 ## Thanks
 
