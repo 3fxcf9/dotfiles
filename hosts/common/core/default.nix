@@ -19,6 +19,9 @@
     Defaults timestamp_timeout=60 # only ask for password every hour
   '';
 
+  # TODO: Find better location to enable dconf
+  programs.dconf.enable = true;
+
   home-manager.extraSpecialArgs = {inherit inputs outputs;};
 
   nixpkgs.config.allowUnfree = false;

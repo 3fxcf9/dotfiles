@@ -5,8 +5,8 @@
 
   nixpkgs.overlays = [
     # Make Signal desktop display
-    (self: super: {
-      signal-desktop = super.signal-desktop.overrideAttrs (old: {
+    (final: prev: {
+      signal-desktop = prev.signal-desktop.overrideAttrs (old: {
         preFixup =
           old.preFixup
           + ''

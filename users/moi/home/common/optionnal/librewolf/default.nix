@@ -12,9 +12,12 @@
       "signon.management.page.breach-alerts.enabled" = false;
       "places.history.enabled" = false;
       "browser.translations.enable" = false;
-      "browser.policies.runOncePerModification.extensionsInstall" = ''
-        ["https://addons.mozilla.org/firefox/downloads/file/3954735/black21-3.0.2.xpi","https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"]
-      '';
+
+      # Dark theme
+      # TODO: Consistent theme
+      "layout.css.prefers-color-scheme.content-override" = 0;
+      "browser.theme.content-theme" = 0;
+      "browser.theme.toolbar-theme" = 0;
     };
   };
 }

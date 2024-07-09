@@ -17,6 +17,9 @@
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
+    settings.debug = {
+      disable_logs = false;
+    };
     extraConfig = ''
       exec-once = dunst
       exec-once = hyprpaper
@@ -58,10 +61,6 @@
       dwindle {
         force_split = 2
         smart_split = yes
-      }
-
-      master {
-        new_is_master = true
       }
 
       decoration {

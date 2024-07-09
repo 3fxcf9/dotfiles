@@ -20,7 +20,6 @@
       TERM = "alacritty";
       TERMINAL = "alacritty";
       EDITOR = "nvim";
-      NIXOS_OZONE_WL = "1";
     };
   };
 
@@ -43,7 +42,7 @@
     findutils # `find` command
     pciutils
     usbutils
-    neofetch
+    fastfetch
     zip
     unzip
     wget

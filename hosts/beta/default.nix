@@ -18,6 +18,8 @@
       "hosts/common/optional/pipewire.nix"
       "hosts/common/optional/docker.nix"
       "hosts/common/optional/services/printing.nix"
+      "hosts/common/optional/rtl-sdr.nix"
+      "hosts/common/optional/hyprland.nix"
 
       # Users
       "users/moi"

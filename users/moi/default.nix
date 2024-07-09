@@ -8,7 +8,7 @@
     isNormalUser = true;
     password = "nixos";
     shell = pkgs.zsh;
-    extraGroups = ["networkmanager" "wheel" "docker"];
+    extraGroups = ["networkmanager" "wheel" "docker" "plugdev"];
     packages = [pkgs.home-manager];
   };
 
