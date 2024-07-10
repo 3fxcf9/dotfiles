@@ -11,7 +11,7 @@
       anchor = "bottom";
       width = "100%";
       height = "100%";
-      prompt-text = " run: ";
+      # prompt-text = "run: ";
       outline-width = 0;
       border-width = 0;
       num-results = 5;

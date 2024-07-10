@@ -20,7 +20,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces" "network" "clock" "hyprland/submap"];
         modules-right = [
-          "custom/sonnerie"
+          # "custom/sonnerie"
           "custom/updates"
           "cpu"
           "memory"
@@ -78,11 +78,11 @@
           "format" = "{}";
           "tooltip" = false;
         };
-        "custom/sonnerie" = {
-          "format" = "<span color='#b4befe'>󰂜</span> {}";
-          "exec" = "~/.config/waybar/scripts/sonnerie -c";
-          "interval" = 1;
-        };
+        # "custom/sonnerie" = {
+        #   "format" = "<span color='#b4befe'>󰂜</span> {}";
+        #   "exec" = "~/.config/waybar/scripts/sonnerie -c";
+        #   "interval" = 1;
+        # };
         "cpu" = {
           "interval" = 10;
           "format" = "<span color='#b4befe'> </span>{usage}%";
@@ -117,8 +117,8 @@
             "default" = ["󰕿" "󰖀" "󰕾" "󰕾"];
           };
           "scroll-step" = 5;
-          "on-click" = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
-          "on-click-right" = "pavucontrol";
+          "on-click" = "pavucontrol";
+          "on-click-right" = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
         };
         "battery" = {
           "format" = "<span color='#b4befe'>{icon}</span> {capacity}%";
