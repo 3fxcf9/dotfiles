@@ -22,6 +22,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
+      ne = "nvim ~/dotfiles";
       nb = "sudo nixos-rebuild switch --flake ~/dotfiles#";
       nml = "nmcli device wifi rescan && nmcli device wifi list";
       nmc = "nmcli device wifi connect";
