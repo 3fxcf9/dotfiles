@@ -5,10 +5,10 @@
   ...
 }: {
   home.pointerCursor = {
-    package = pkgs.catppuccin-cursors.mochaPink;
-    name = "Catppuccin-Mocha-Dark-Cursors";
-    size = 40;
     gtk.enable = true;
+    package = pkgs.catppuccin-cursors.mochaDark;
+    name = "catppuccin-mocha-dark-cursors";
+    size = 20;
   };
 
   dconf.settings = {
@@ -29,7 +29,7 @@
     };
 
     cursorTheme = {
-      name = "Catppuccin-Mocha-Dark";
+      name = "catppuccin-mocha-dark-cursors";
       package = pkgs.catppuccin-cursors.mochaDark;
     };
 
@@ -42,7 +42,7 @@
     gtk4.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=1
-        gtk-cursor-theme-name=Catppuccing-Mocha-Dark
+        gtk-cursor-theme-name=catppuccin-mocha-dark-cursors
       '';
     };
   };

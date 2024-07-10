@@ -47,6 +47,11 @@
         })
 
         vim.cmd("colorscheme tokyonight")
+        vim.cmd("highlight NvimTreeNormal guibg=#050518")
+        vim.cmd("highlight NvimTreeNormalNC guibg=#050518")
+        vim.cmd("highlight NvimTreeNormalFloat guibg=#050518")
+        vim.cmd("highlight NvimTreeWinSeparator guibg=#050518")
+
       '';
   };
 }

@@ -2,8 +2,15 @@
   config,
   inputs,
   pkgs,
+  osConfig,
   ...
-}: {
+}: let
+  isBeta = osConfig.networking.hostName == "beta";
+  screenOffset =
+    if isBeta
+    then "910"
+    else "700";
+in {
   home.packages = with pkgs; [
     wl-clipboard
     tofi
@@ -26,10 +33,10 @@
       exec = pkill waybar; sleep 1; waybar
 
       # Some default env vars.
-      env = XCURSOR_SIZE,24
+      env = XCURSOR_SIZE,20
 
       # Monitors
-      monitor=,preferred,auto,auto
+      monitor=,preferred,auto,1
 
       input {
         kb_layout = ergol
@@ -106,8 +113,8 @@
 
       # Multimonitor
       bind = $MOD, B, exec, hyprctl dispatch movecurrentworkspacetomonitor -1
-      bind = $MOD, F11, exec, hyprctl keyword monitor eDP-1,1366x768@59.97,0x910,1.0,transform,2
-      bind = $MOD SHIFT, F11, exec, hyprctl keyword monitor eDP-1,1366x768@60,0x910
+      bind = $MOD, F11, exec, hyprctl keyword monitor eDP-1,preferred,0x${screenOffset},1.0,transform,2
+      bind = $MOD SHIFT, F11, exec, hyprctl keyword monitor eDP-1,preferred@60,0x${screenOffset}
 
       # Move focus with MOD + arrow keys
       bind = $MOD, left, movefocus, l
