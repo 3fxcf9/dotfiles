@@ -6,7 +6,7 @@ in {
     enable = true;
     settings = {
       default_session = {
-        command = "${tuigreet} --time --remember --asterisks --greeting Access restricted, please authenticate to continue.' --cmd Hyprland --theme 'border=magenta;text=cyan;prompt=green;time=red;action=blue;button=yellow;container=black;input=red'";
+        command = "${tuigreet} --time --remember --asterisks --greeting 'Access restricted, please authenticate to continue.' --cmd Hyprland --theme 'border=magenta;text=cyan;prompt=green;time=red;action=blue;button=yellow;container=black;input=red'";
         user = "greeter";
       };
     };
