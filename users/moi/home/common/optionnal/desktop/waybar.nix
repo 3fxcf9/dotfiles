@@ -48,7 +48,7 @@
         "network" = {
           "format" = "{icon}{essid}";
           "format-alt" = "{icon}{ipaddr}/{cidr}";
-          "format-alt-click" = "click-right";
+          "format-alt-click" = "click-left";
           "format-icons" = {
             "wifi" = ["<span foreground='#b4befe'> </span>"];
             "ethernet" = ["<span foreground='#b4befe'>󰈀 </span>"];

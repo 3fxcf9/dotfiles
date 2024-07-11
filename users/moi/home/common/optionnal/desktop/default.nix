@@ -6,6 +6,8 @@
     ./tofi.nix
     ./dunst.nix
     ./hyprpaper.nix
+    ./hyprlock.nix
+    ./hypridle.nix
   ];
 
   # Hyprland wallpaper

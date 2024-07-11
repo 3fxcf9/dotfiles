@@ -19,6 +19,8 @@ in {
     wlroots
     nwg-displays
     hyprshot
+    hyprpicker
+    hypridle
   ];
 
   wayland.windowManager.hyprland = {
@@ -30,6 +32,7 @@ in {
     extraConfig = ''
       exec-once = dunst
       exec-once = hyprpaper
+      exec-once = hypridle
       exec = pkill waybar; sleep 1; waybar
 
       # Some default env vars.
@@ -110,6 +113,8 @@ in {
       bind = $MOD, V, togglefloating,
       bind = $MOD, U, togglesplit,
       bind = $MOD SHIFT, S, exec, hyprshot -m region --clipboard-only # Screenshot
+      bind = $MOD, C, exec, hyprpicker -a # Color picker
+      bind = $MOD, F12, exec, hyprlock # Lock screen
 
       # Multimonitor
       bind = $MOD, B, exec, hyprctl dispatch movecurrentworkspacetomonitor -1

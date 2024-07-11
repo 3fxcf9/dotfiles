@@ -10,10 +10,12 @@
 - Power menu
 - Switch to kitty
 - Secret management
-- Librewolf default browser
 - Syncthing
+- Idle inhibit button in waybar
+- Write hyprland config in nix format
 
 ## Thanks
 
+- [anotherhadi/nixy](https://github.com/anotherhadi/nixy)
 - [JosiahABrown/nixdots](https://github.com/JosiahABrown/nixdots)
 - [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config)
