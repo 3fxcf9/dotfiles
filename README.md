@@ -12,7 +12,6 @@
 - Secret management
 - Syncthing
 - Idle inhibit button in waybar
-- Write hyprland config in nix format
 
 ## Thanks
 
