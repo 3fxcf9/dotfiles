@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   home.packages = with pkgs; [fd bat];
 
   programs.fzf = {
@@ -22,14 +26,21 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ne = "nvim ~/dotfiles";
-      nb = "sudo nixos-rebuild switch --flake ~/dotfiles#";
+      nd = "cd ${config.var.configDirectory}";
+      ne = "nvim ${config.var.configDirectory}";
+      nb = "sudo nixos-rebuild switch --flake ${config.var.configDirectory}#";
+
       nml = "nmcli device wifi rescan && nmcli device wifi list";
       nmc = "nmcli device wifi connect";
+
       ls = "eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions";
+      ll = "eza --color=always --long";
+
+      udm = "udisksctl mount -b";
+      udum = "udisksctl unmount -b";
     };
 
-    history.size = 10000;
+    history.size = 100000;
 
     initExtra = ''
       # Zsh option

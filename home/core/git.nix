@@ -7,11 +7,12 @@
   programs.git = {
     enable = true;
     package = pkgs.gitAndTools.gitFull;
-    userName = "3fxcf9";
-    userEmail = "123954477+3fxcf9@users.noreply.github.com";
+    userName = config.var.git.username;
+    userEmail = config.var.git.email;
     aliases = {};
     extraConfig = {
       init.defaultBranch = "main";
+      push.autoSetupRemote = true;
       # url = {
       #   "ssh://git@github.com" = {
       #     insteadOf = "https://github.com";

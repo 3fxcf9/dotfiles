@@ -2,13 +2,10 @@
 
 ## TODO
 
-- Create a uniform color scheme
 - Low battery warning
 - Fix Librewolf theme
 - Hibernation
-- Lock screen
 - Power menu
-- Switch to kitty
 - Secret management
 - Syncthing
 - Idle inhibit button in waybar
