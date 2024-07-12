@@ -4,6 +4,17 @@
   lib,
   ...
 }: {
+  system.autoUpgrade =
+    if config.var.autoUpgrade
+    then {
+      enable = true;
+      dates = "04:00";
+      flake = "${config.var.configDirectory}";
+      flags = ["--update-input" "nixpkgs" "--commit-lock-file"];
+      allowReboot = false;
+    }
+    else {};
+
   nix = {
     # This will add each flake input as a registry
     # To make nix3 commands consistent with your flake
@@ -25,12 +36,22 @@
 
       experimental-features = ["nix-command" "flakes"];
       warn-dirty = false;
+
+      substituters = ["https://hyprland.cachix.org"];
+      trusted-public-keys = [
+        "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
+      ];
     };
 
-    # Garbage Collection
-    gc = {
-      automatic = true;
-      options = "--delete-older-than 10d";
-    };
+    # Garbage collection
+    gc =
+      if config.var.autoGarbageCollector
+      then {
+        automatic = true;
+        persistent = true;
+        dates = "weekly";
+        options = "--delete-older-than 7d";
+      }
+      else {};
   };
 }

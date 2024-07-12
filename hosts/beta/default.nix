@@ -1,30 +1,23 @@
-{
-  inputs,
-  configLib,
-  ...
-}: {
-  imports =
-    [
-      ./hardware-configuration.nix
-      inputs.disko.nixosModules.disko
-      ./disk-config.nix
-    ]
-    ++ (map configLib.relativeToRoot [
-      # Common config
-      "hosts/common/core"
+{inputs, ...}: {
+  imports = [
+    ./hardware-configuration.nix
+    inputs.disko.nixosModules.disko
+    ./disk-config.nix
 
-      # Optionnal
-      "hosts/common/optional/services/openssh.nix"
-      "hosts/common/optional/pipewire.nix"
-      "hosts/common/optional/docker.nix"
-      "hosts/common/optional/services/printing.nix"
-      "hosts/common/optional/rtl-sdr.nix"
-      "hosts/common/optional/hyprland.nix"
+    # Common config
+    ../common/core
 
-      # Users
-      "users/moi"
-      #"users/public"
-    ]);
+    # Optionnal
+    ../common/optional/services/openssh.nix
+    ../common/optional/pipewire.nix
+    ../common/optional/docker.nix
+    ../common/optional/services/printing.nix
+    ../common/optional/rtl-sdr.nix
+    ../common/optional/hyprland.nix
+
+    # Users
+    ../../users/moi
+  ];
 
   networking = {
     hostName = "beta";

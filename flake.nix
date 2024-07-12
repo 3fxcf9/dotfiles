@@ -29,63 +29,48 @@
 
     # Hyprland window manager
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    # Nixos hardware
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    disko,
-    home-manager,
-    hyprland,
-    ...
-  } @ inputs: let
-    inherit (self) outputs;
-    inherit (nixpkgs) lib;
-    configLib = import ./lib {inherit lib;};
-    specialArgs = {inherit inputs outputs configLib nixpkgs;};
-  in {
+  outputs = {nixpkgs, ...} @ inputs: {
     formatter.x86_64-linux =
       nixpkgs.legacyPackages.x86_64-linux.nixfmt-classic;
+
     nixosConfigurations = {
-      alpha = lib.nixosSystem {
-        inherit specialArgs;
+      alpha = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs.inputs = inputs;
         modules = [
-          home-manager.nixosModules.home-manager
+          inputs.nixos-hardware.nixosModules.dell-inspiron-7405
+          inputs.home-manager.nixosModules.home-manager
           {
-            home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = specialArgs;
+            home-manager = {
+              backupFileExtension = "backup";
+              extraSpecialArgs = {inherit inputs;};
+              useGlobalPkgs = true;
+            };
           }
           ./hosts/alpha
         ];
       };
-      beta = lib.nixosSystem {
-        inherit specialArgs;
-        modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-          ./hosts/beta
-        ];
-      };
+
+      # beta = nixpkgs.lib.nixosSystem {
+      #   system = "x86_64-linux";
+      #   specialArgs.inputs = inputs;
+      #   modules = [
+      #     inputs.home-manager.nixosModules.home-manager
+      #     {
+      #       home-manager = {
+      #         backupFileExtension = "backup";
+      #         extraSpecialArgs = {inherit inputs;};
+      #         useGlobalPkgs = true;
+      #       };
+      #     }
+      #     ./hosts/beta
+      #   ];
+      # };
     };
-    # nixosConfigurations.stdmain = inputs.nixpkgs.lib.nixosSystem {
-    #  system = "x86_64-linux";
-    #  modules = [
-    #    disko.nixosModules.disko
-    #    ./system/disk-config.nix
-    #    ./system/configuration.nix
-    #    hyprland.nixosModules.default
-    #    { programs.hyprland.enable = true; }
-    #    home-manager.nixosModules.home-manager
-    #    {
-    #      home-manager.backupFileExtension = "backup";
-    #      home-manager.useGlobalPkgs = true;
-    #      home-manager.useUserPackages = true;
-    #      home-manager.users.moi = import ./home;
-    #    }
-    #  ];
-    #};
   };
 }

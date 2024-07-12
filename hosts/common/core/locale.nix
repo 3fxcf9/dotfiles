@@ -1,18 +1,20 @@
-{lib, ...}: {
-  time.timeZone = lib.mkDefault "Europe/Paris";
+{
+  lib,
+  config,
+  ...
+}: {
+  time.timeZone = config.var.timeZone;
 
-  i18n.defaultLocale = lib.mkDefault "en_US.UTF-8";
+  i18n.defaultLocale = config.var.defaultLocale;
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "fr_FR.utf8";
-    LC_IDENTIFICATION = "fr_FR.utf8";
-    LC_MEASUREMENT = "fr_FR.utf8";
-    LC_MONETARY = "fr_FR.utf8";
-    LC_NAME = "fr_FR.utf8";
-    LC_NUMERIC = "fr_FR.utf8";
-    LC_PAPER = "fr_FR.utf8";
-    LC_TELEPHONE = "fr_FR.utf8";
-    LC_TIME = "fr_FR.utf8";
+    LC_ADDRESS = config.var.extraLocale;
+    LC_IDENTIFICATION = config.var.extraLocale;
+    LC_MEASUREMENT = config.var.extraLocale;
+    LC_MONETARY = config.var.extraLocale;
+    LC_NAME = config.var.extraLocale;
+    LC_NUMERIC = config.var.extraLocale;
+    LC_PAPER = config.var.extraLocale;
+    LC_TELEPHONE = config.var.extraLocale;
+    LC_TIME = config.var.extraLocale;
   };
-
-  console.keyMap = "fr";
 }

@@ -53,17 +53,17 @@ in {
       ];
 
       general = {
-        gaps_in = 4;
-        gaps_out = 8;
-        border_size = 1;
-        "col.active_border" = "rgba(b4befeff)";
+        gaps_in = config.var.theme.gaps-in;
+        gaps_out = config.var.theme.gaps-out;
+        border_size = config.var.theme.border-size;
+        "col.active_border" = "rgba(${config.var.theme.colors.accent}ff)";
         "col.inactive_border" = "rgba(00000055)";
         layout = "master";
       };
       master.new_status = "master";
 
       decoration = {
-        rounding = 4; # 5-1 for the borders
+        rounding = config.var.theme.rounding - 1;
         blur = {enabled = false;};
         drop_shadow = false;
       };
@@ -82,6 +82,8 @@ in {
         force_default_wallpaper = 0;
       };
       input = {
+        # FIXME: Ergol as layout ?
+        # kb_layout = config.var.keyboardLayout;
         kb_layout = "ergol";
         kb_options = "ctrl:nocaps,altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
         follow_mouse = 1;
@@ -107,8 +109,7 @@ in {
 
         "$MOD, M, exit,"
         "$MOD, V, togglefloating,"
-        "$MOD, U, togglesplit,"
-        "$MOD SHIFT, S, exec, hyprshot -m region --clipboard-only # Screenshot"
+        "$MOD, S, exec, hyprshot -m region --clipboard-only # Screenshot"
         "$MOD, C, exec, hyprpicker -a # Color picker"
         "$MOD, F12, exec, hyprlock # Lock screen"
 
