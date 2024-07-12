@@ -8,40 +8,23 @@
     packages = with pkgs; [terminus_font];
     font = "ter-118b";
     colors = [
-      "15161e"
-      "f7768e"
-      "9ece6a"
-      "e0af68"
-      "7aa2f7"
-      "bb9af7"
-      "7dcfff"
-      "a9b1d6"
+      config.var.theme.colors.c0
+      config.var.theme.colors.c1
+      config.var.theme.colors.c2
+      config.var.theme.colors.c3
+      config.var.theme.colors.c4
+      config.var.theme.colors.c5
+      config.var.theme.colors.c6
+      config.var.theme.colors.c7
 
-      "414868"
-      "f7768e"
-      "9ece6a"
-      "e0af68"
-      "7aa2f7"
-      "bb9af7"
-      "7dcfff"
-      "c0caf5"
-
-      # "15121c"
-      # "cb5760"
-      # "999f63"
-      # "d4a067"
-      # "6c90a8"
-      # "776690"
-      # "528a9b"
-      # "eeffff"
-      # "727480"
-      # "cb5760"
-      # "999f63"
-      # "d4a067"
-      # "6c90a8"
-      # "776690"
-      # "528a9b"
-      # "eeffff"
+      config.var.theme.colors.c8
+      config.var.theme.colors.c9
+      config.var.theme.colors.c10
+      config.var.theme.colors.c11
+      config.var.theme.colors.c12
+      config.var.theme.colors.c13
+      config.var.theme.colors.c14
+      config.var.theme.colors.c15
     ];
   };
 

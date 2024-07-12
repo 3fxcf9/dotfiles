@@ -8,9 +8,9 @@
   startup = pkgs.writeShellScriptBin "startup" ''
     # Called by Hyprland on startup
 
-    ${pkgs.waybar}/bin/waybar &
+    pkill waybar; sleep 1; ${pkgs.waybar}/bin/waybar &
+    ${pkgs.hyprpaper}/bin/hyprpaper &
     ${pkgs.hypridle}/bin/hypridle &
-    pkill waybar; sleep 1; ${pkgs.hyprpaper}/bin/hyprpaper &
   '';
   isBeta = osConfig.networking.hostName == "beta";
   screenOffset =
