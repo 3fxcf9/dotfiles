@@ -30,7 +30,7 @@
   };
 
   networking = {
-    hostName = "alpha";
+    hostName = config.var.hostname;
     networkmanager.enable = true;
   };
 

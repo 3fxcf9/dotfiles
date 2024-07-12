@@ -56,21 +56,21 @@
         ];
       };
 
-      # beta = nixpkgs.lib.nixosSystem {
-      #   system = "x86_64-linux";
-      #   specialArgs.inputs = inputs;
-      #   modules = [
-      #     inputs.home-manager.nixosModules.home-manager
-      #     {
-      #       home-manager = {
-      #         backupFileExtension = "backup";
-      #         extraSpecialArgs = {inherit inputs;};
-      #         useGlobalPkgs = true;
-      #       };
-      #     }
-      #     ./hosts/beta
-      #   ];
-      # };
+      beta = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs.inputs = inputs;
+        modules = [
+          inputs.home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              backupFileExtension = "backup";
+              extraSpecialArgs = {inherit inputs;};
+              useGlobalPkgs = true;
+            };
+          }
+          ./hosts/beta
+        ];
+      };
     };
   };
 }
