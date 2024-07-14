@@ -1,4 +1,5 @@
 {...}: {
+  programs.ssh.enableAskPassword = false; # Fix git not asking password
   environment.variables = {
     XDG_DATA_HOME = "$HOME/.local/share";
     PASSWORD_STORE_DIR = "$HOME/.local/share/password-store";
