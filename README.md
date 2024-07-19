@@ -6,9 +6,8 @@
 - Fix Librewolf theme
 - Hibernation
 - Power menu
-- Secret management
 - Syncthing
-- Idle inhibit button in waybar
+- Bind brightness and volume keyboard keys
 
 ## Thanks
 

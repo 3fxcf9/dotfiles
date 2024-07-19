@@ -30,6 +30,15 @@
     # Hyprland window manager
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
+    # Secret management
+    sops-nix.url = "github:Mic92/sops-nix";
+
+    # Private secret repo
+    nix-secrets = {
+      url = "git+ssh://git@github.com/3fxcf9/nix-secrets.git?ref=main&shallow=1";
+      flake = false;
+    };
+
     # Nixos hardware
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };

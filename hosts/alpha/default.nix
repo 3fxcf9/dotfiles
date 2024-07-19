@@ -34,10 +34,11 @@
     networkmanager.enable = true;
   };
 
+  users.mutableUsers = false; # Required for passwords to be set via sops during system activation
   users.users.${config.var.username} = {
-    password = "nixos";
     shell = pkgs.zsh;
     isNormalUser = true;
+    hashedPasswordFile = config.sops.secrets."${config.var.username}/password".path;
     description = "${config.var.username} account";
     extraGroups = ["networkmanager" "wheel" "docker" "plugdev"];
   };

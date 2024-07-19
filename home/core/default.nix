@@ -40,7 +40,6 @@ in {
     ripgrep
     jq
     tldr
-    # ssh
     wget
     curl
     htop

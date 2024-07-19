@@ -28,7 +28,7 @@
     shellAliases = {
       nd = "cd ${config.var.configDirectory}";
       ne = "nvim ${config.var.configDirectory}";
-      nb = "sudo nixos-rebuild switch --flake ${config.var.configDirectory}#";
+      nb = "nixos-rebuild switch --flake ${config.var.configDirectory}# --use-remote-sudo";
 
       nml = "nmcli device wifi rescan && nmcli device wifi list";
       nmc = "nmcli device wifi connect";

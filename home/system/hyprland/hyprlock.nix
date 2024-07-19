@@ -6,7 +6,7 @@
         disable_loading_bar = true;
         hide_cursor = true;
         ignore_empty_input = true;
-        grace = 5;
+        grace = 2;
         no_fade_in = false;
         no_fade_out = false;
       };

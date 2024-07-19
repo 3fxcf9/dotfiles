@@ -6,6 +6,7 @@
   imports = [
     ./variables.nix
 
+    # Required
     ../../home/core
 
     # Programs
