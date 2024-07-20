@@ -12,6 +12,7 @@
     # Programs
     ../../home/programs/alacritty
     ../../home/programs/neovim
+    ../../home/programs/texlive
     ../../home/programs/btop
     ../../home/programs/zathura
     ../../home/programs/librewolf
