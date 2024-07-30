@@ -6,8 +6,14 @@
 - Fix Librewolf theme
 - Hibernation
 - Power menu
-- Syncthing
 - Bind brightness and volume keyboard keys
+
+## Memo
+
+- After pushing to the nix-secrets private repo:
+  ```bash
+  nix flake lock --update-input nix-secrets
+  ```
 
 ## Thanks
 

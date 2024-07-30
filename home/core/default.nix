@@ -34,7 +34,7 @@ in {
 
   home.packages = with pkgs; [
     # Utils
-    fd
+    fd # `find` replacement
     eza
     fzf
     ripgrep
@@ -54,10 +54,6 @@ in {
     zip
     unzip
     wget
-
-    # TODO: Configure
-    figlet
-    rust-motd
 
     # TODO: Notification
     dunst

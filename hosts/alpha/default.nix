@@ -17,6 +17,7 @@
 
     # Optionnal
     ../common/optional/services/openssh.nix
+    ../common/optional/services/syncthing.nix
     ../common/optional/pipewire.nix
     ../common/optional/docker.nix
     ../common/optional/services/printing.nix
