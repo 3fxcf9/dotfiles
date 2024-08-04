@@ -96,7 +96,8 @@ in {
         # FIXME: Ergol as layout ?
         # kb_layout = config.var.keyboardLayout;
         kb_layout = "ergol";
-        kb_options = "ctrl:nocaps,altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
+        kb_options = "altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
+        # kb_options = "ctrl:nocaps,altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
         follow_mouse = 1;
         scroll_method = "2fg";
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.

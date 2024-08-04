@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -10,12 +10,6 @@
     jack.enable = true;
   };
 
-  environment.systemPackages = builtins.attrValues {
-    inherit
-      (pkgs)
-      pamixer
-      pavucontrol
-      pulseaudio
-      ;
-  };
+  environment.systemPackages =
+    builtins.attrValues { inherit (pkgs) pamixer pavucontrol pulseaudio; };
 }

@@ -23,7 +23,10 @@
     ../common/optional/services/printing.nix
     ../common/optional/rtl-sdr.nix
     ../common/optional/hyprland.nix
+    ../common/optional/services/kanata.nix
   ];
+
+  networking.firewall.allowedTCPPorts = [8000]; # FIXME: Remove (testing purpose)
 
   boot = {
     tmp.cleanOnBoot = true;
@@ -35,13 +38,15 @@
     networkmanager.enable = true;
   };
 
-  users.mutableUsers = false; # Required for passwords to be set via sops during system activation
+  users.mutableUsers =
+    false; # Required for passwords to be set via sops during system activation
   users.users.${config.var.username} = {
     shell = pkgs.zsh;
     isNormalUser = true;
-    hashedPasswordFile = config.sops.secrets."${config.var.username}/password".path;
+    hashedPasswordFile =
+      config.sops.secrets."${config.var.username}/password".path;
     description = "${config.var.username} account";
-    extraGroups = ["networkmanager" "wheel" "docker" "plugdev"];
+    extraGroups = ["networkmanager" "wheel" "docker" "plugdev" "audio" "uinput"];
   };
   home-manager.users.moi = import ./home.nix;
 

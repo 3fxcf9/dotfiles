@@ -27,6 +27,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Nixvim
+    nixvim.url = "github:3fxcf9/nixvim";
+
     # Hyprland window manager
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
