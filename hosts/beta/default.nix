@@ -17,6 +17,7 @@
 
     # Optionnal
     ../common/optional/services/openssh.nix
+    ../common/optional/services/syncthing.nix
     ../common/optional/pipewire.nix
     ../common/optional/docker.nix
     ../common/optional/services/printing.nix
@@ -43,7 +44,7 @@
     hashedPasswordFile =
       config.sops.secrets."${config.var.username}/password".path;
     description = "${config.var.username} account";
-    extraGroups = ["networkmanager" "wheel" "docker" "plugdev" "audio"];
+    extraGroups = ["networkmanager" "wheel" "docker" "plugdev" "audio" "uinput"];
   };
   home-manager.users.moi = import ./home.nix;
 

@@ -71,7 +71,10 @@ in {
         "col.inactive_border" = "rgba(${config.var.theme.colors.bg}ff)";
         layout = "master";
       };
-      master.new_status = "master";
+      master = {
+        new_status = "master";
+        new_on_top = true;
+      };
 
       decoration = {
         rounding = config.var.theme.rounding - config.var.theme.border-size;
@@ -119,7 +122,6 @@ in {
         "$MOD, F,fullscreen, 1 # Maximizing"
         "$MOD SHIFT, F,fullscreen, 0 # Fullscreen"
 
-        "$MOD, M, exit,"
         "$MOD, V, togglefloating,"
         "$MOD, S, exec, hyprshot -m region --clipboard-only # Screenshot"
         "$MOD, C, exec, hyprpicker -a # Color picker"
@@ -139,12 +141,7 @@ in {
         "$MOD, H, movefocus, l"
         "$MOD, L, movefocus, r"
         "$MOD, K, movefocus, u"
-        "$MOD, R, movefocus, d"
-
-        "$MOD SHIFT, L, movewindow, l"
-        "$MOD SHIFT, K, movewindow, r"
-        "$MOD SHIFT, H, movewindow, u"
-        "$MOD SHIFT, R, movewindow, d"
+        "$MOD, J, movefocus, d"
 
         # Switch workspaces
         "$MOD, 1, workspace, 1"
@@ -169,6 +166,13 @@ in {
         "$MOD SHIFT, 8, movetoworkspace, 8"
         "$MOD SHIFT, 9, movetoworkspace, 9"
         "$MOD SHIFT, 0, movetoworkspace, 10"
+      ];
+
+      binde = [
+        "$MOD SHIFT, H, resizeactive, -10 0"
+        "$MOD SHIFT, L, resizeactive, 10 0"
+        "$MOD SHIFT, K, resizeactive, 0 -10"
+        "$MOD SHIFT, J, resizeactive, 0 10"
       ];
 
       bindm = [

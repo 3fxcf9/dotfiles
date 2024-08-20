@@ -1,9 +1,4 @@
-{
-  outputs,
-  lib,
-  config,
-  ...
-}: {
+{config, ...}: {
   programs.ssh = {
     enable = true;
     matchBlocks = {

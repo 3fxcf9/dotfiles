@@ -26,8 +26,6 @@
     ../common/optional/services/kanata.nix
   ];
 
-  networking.firewall.allowedTCPPorts = [8000]; # FIXME: Remove (testing purpose)
-
   boot = {
     tmp.cleanOnBoot = true;
     loader.systemd-boot.enable = true;
