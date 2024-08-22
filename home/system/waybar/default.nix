@@ -1,6 +1,5 @@
 {
   config,
-  lib,
   pkgs,
   ...
 }: let
@@ -176,6 +175,7 @@ in {
         font-size: ${toString config.var.theme.waybar.font-size}pt;
         box-shadow: none;
         text-shadow: none;
+        background: none;
         transition-duration: 0;
         font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
       }
