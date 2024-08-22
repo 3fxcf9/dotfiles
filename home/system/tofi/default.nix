@@ -1,26 +1,39 @@
 {
-  pkgs,
   lib,
   config,
   ...
 }: {
+  # TODO: Clean fixed px sizes
   programs.tofi = {
     enable = true;
     settings = {
       drun-launch = true;
-      anchor = "bottom";
-      width = "100%";
-      height = "100%";
-      # prompt-text = "run: ";
+      hide-cursor = true;
+      width = 500;
+      height = 290;
+      clip-to-padding = false;
       outline-width = 0;
-      border-width = 0;
+      border-width = 2;
+      border-color = config.var.theme.colors.accent;
+      background-color = config.var.theme.colors.bg;
+      corner-radius = config.var.theme.rounding;
+      padding-left = 35;
+      padding-top = 25;
+      padding-bottom = 25;
+      padding-right = 25;
       num-results = 5;
-      padding-left = "35%";
-      padding-top = "35%";
-      result-spacing = "25";
-      font = "MonaspiceXe Nerd Font Mono";
-      background-color = "#000A";
-      selection-color = "#b4befe";
+      result-spacing = 15;
+      font = "MonaspiceNe Nerd Font Mono";
+      font-size = 16;
+      placeholder-text = "Execute...";
+      prompt-text = "> ";
+      prompt-background = config.var.theme.colors.accent;
+      prompt-color = config.var.theme.colors.accentFg;
+      prompt-background-corner-radius = 2;
+      prompt-background-padding = "5,20,3";
+      prompt-padding = 35;
+      selection-color = config.var.theme.colors.c3;
+      physical-keybindings = false;
       ascii-input = false;
       hint-font = false;
     };
