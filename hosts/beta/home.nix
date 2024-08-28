@@ -9,7 +9,8 @@
     ../../home/programs/alacritty
     ../../home/programs/btop
     ../../home/programs/zathura
-    ../../home/programs/librewolf
+    ../../home/programs/firefox
+    ../../home/programs/qutebrowser
     ../../home/programs/signal-desktop
 
     # Scripts

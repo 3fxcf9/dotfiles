@@ -1,8 +1,6 @@
 {
-  config,
   lib,
   pkgs,
-  outputs,
   ...
 }: let
   scanPaths = path:

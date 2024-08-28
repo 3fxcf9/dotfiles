@@ -62,7 +62,7 @@
         show_indicators = true;
         shrink = false;
         word_wrap = true;
-        browser = "${pkgs.librewolf}/bin/librewolf";
+        browser = "${pkgs.firefox}/bin/firefox";
       };
 
       fullscreen_delay_everything = {fullscreen = "delay";};

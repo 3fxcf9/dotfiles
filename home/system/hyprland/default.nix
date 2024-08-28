@@ -1,6 +1,5 @@
 {
   config,
-  inputs,
   pkgs,
   osConfig,
   ...
@@ -123,8 +122,11 @@ in {
         "$MOD SHIFT, F,fullscreen, 0 # Fullscreen"
 
         "$MOD, V, togglefloating,"
-        "$MOD, S, exec, hyprshot -m region --clipboard-only # Screenshot"
-        "$MOD, C, exec, hyprpicker -a # Color picker"
+        "$MOD, M, layoutmsg, swapwithmaster"
+        "$MOD, S, exec, hyprshot -m region --clipboard-only"
+        "$MOD SHIFT, S, exec, hyprshot -m region -o ~/Screenshots"
+        ", PRINT, exec, hyprshot -m output -m active -o ~/Screenshots"
+        "$MOD, P, exec, hyprpicker -a # Color picker"
         "$MOD, F12, exec, hyprlock # Lock screen"
 
         # Multimonitor
