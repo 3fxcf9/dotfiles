@@ -2,34 +2,7 @@
   config,
   pkgs,
   ...
-}: let
-  caffeine-status = pkgs.writeShellScriptBin "caffeine-status" ''
-    [[ -f /tmp/caffeine ]] && echo "1" || echo "0"
-  '';
-
-  caffeine = pkgs.writeShellScriptBin "caffeine" ''
-    if [[ -f /tmp/caffeine ]]; then
-      rm /tmp/caffeine
-      ${pkgs.hyprland}/bin/hyprctl dispatch exec ${pkgs.hypridle}/bin/hypridle
-      message="󰾪  Caffeine Deactivated"
-    else
-      touch /tmp/caffeine
-      pkill hypridle
-      message="󰅶  Caffeine Activated"
-    fi
-    notify-send "caffeine" "$message"
-  '';
-
-  caffeine-status-icon = pkgs.writeShellScriptBin "caffeine-status-icon" ''
-    status=$(caffeine-status)
-    if [[ $status == "1" ]]; then
-      echo "󰅶"
-    else
-      echo "󰾪"
-    fi
-  '';
-in {
-  home.packages = [caffeine-status caffeine caffeine-status-icon];
+}: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar.overrideAttrs (oldAttrs: {
@@ -53,7 +26,7 @@ in {
           "disk"
           "backlight"
           "pulseaudio"
-          "custom/caffeine"
+          "idle_inhibitor"
           "battery"
         ];
         "hyprland/workspaces" = {
@@ -147,13 +120,12 @@ in {
           on-click-right = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
           reverse-scrolling = true;
         };
-        "custom/caffeine" = {
-          format = "<span color='#${config.var.theme.colors.accent}'>{}</span>";
-          exec = "caffeine-status-icon";
-          exec-on-event = true;
-          on-click = "caffeine";
-          interval = 10;
-          tooltip = false;
+        idle_inhibitor = {
+          format = "<span color='#${config.var.theme.colors.accent}'>{icon}</span>";
+          format-icons = {
+            activated = "󰅶";
+            deactivated = "󰾪";
+          };
         };
         battery = {
           format = "<span color='#${config.var.theme.colors.accent}'>{icon}</span> {capacity}%";
@@ -209,7 +181,7 @@ in {
       }
       /* END */
 
-      #network, #clock, #workspaces, #custom-caffeine, #battery {
+      #network, #clock, #workspaces, #idle_inhibitor, #battery {
         border-radius: ${toString config.var.theme.rounding}px;
       }
 
@@ -253,7 +225,7 @@ in {
         border-radius: 0 ${toString config.var.theme.rounding}px ${toString config.var.theme.rounding}px 0;
       }
 
-      #custom-caffeine {
+      #idle_inhibitor {
         margin-right: ${toString config.var.theme.gaps-out}px;
       }
 
