@@ -43,6 +43,16 @@
     history.size = 100000;
 
     initExtra = ''
+      # Aliases
+      texclean() {
+        if [ $# -eq 0 ]; then
+          echo "Usage: clean_latex <filename_without_extension>"
+        else
+          rm "$1".{aux,fdb_latexmk,fls,log,pdf,synctex.gz}
+        fi
+      }
+
+
       # Zsh option
       setopt interactivecomments # allow comments in interactive mode
       setopt magicequalsubst     # enable filename expansion for arguments of the form ‘anything=expression’

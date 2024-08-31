@@ -12,6 +12,7 @@
     ../../home/programs/firefox
     ../../home/programs/qutebrowser
     ../../home/programs/signal-desktop
+    ../../home/programs/texlive
 
     # Scripts
     # ../../home/scripts/default.nix # All scripts

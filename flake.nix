@@ -30,6 +30,12 @@
     # Nixvim
     nixvim.url = "github:3fxcf9/nixvim";
 
+    # Custom latex class
+    custom-latex-course-class = {
+      url = "git+ssh://git@github.com/3fxcf9/LaTeX-course-class.git?ref=main&shallow=1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Hyprland window manager
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
