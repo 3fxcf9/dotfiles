@@ -24,6 +24,7 @@
     ../common/optional/rtl-sdr.nix
     ../common/optional/hyprland.nix
     ../common/optional/services/kanata.nix
+    ../common/optional/laptop.nix
   ];
 
   boot = {
