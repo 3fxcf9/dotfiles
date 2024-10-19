@@ -1,12 +1,14 @@
-{ config, ... }: {
+{config, ...}: {
   programs.alacritty = {
     enable = true;
     settings = {
-      keyboard.bindings = [{
-        key = "I";
-        mods = "Control|Shift";
-        action = "ToggleViMode";
-      }];
+      keyboard.bindings = [
+        {
+          key = "I";
+          mods = "Control|Shift";
+          action = "ToggleViMode";
+        }
+      ];
       colors = {
         primary = {
           background = "#" + config.var.theme.colors.bg;

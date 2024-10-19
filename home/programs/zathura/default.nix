@@ -18,6 +18,10 @@
       recolor = "true";
       recolor-lightcolor = "#" + config.var.theme.colors.bg;
       recolor-darkcolor = "#" + config.var.theme.colors.fg;
+
+      # TexLab inverse search
+      synctex = true;
+      synctex-editor-command = "texlab inverse-search -i %{input} -l %{line}";
     };
   };
 }

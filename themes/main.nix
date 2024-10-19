@@ -2,7 +2,7 @@
   wallpaper = "main.jpg";
 
   font = "Monaspace Neon";
-  font-mono = "Monaspace Neon";
+  font-mono = "MonaspiceNe Nerd Font Mono";
   font-size = 11;
 
   rounding = 6;
