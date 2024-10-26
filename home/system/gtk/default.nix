@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   qt = {
@@ -12,7 +13,7 @@
   gtk = {
     enable = true;
 
-    theme = {name = "FlatColor";};
+    theme = lib.mkForce {name = "FlatColor";};
 
     iconTheme = {
       package = pkgs.moka-icon-theme;
@@ -30,16 +31,11 @@
     };
 
     gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
+      gtk-application-prefer-dark-theme = 1;
     };
 
     gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-        gtk-cursor-theme-name=catppuccin-mocha-dark-cursors
-      '';
+      gtk-application-prefer-dark-theme = 1;
     };
   };
 
@@ -53,9 +49,35 @@
   home.file = {
     ".local/share/themes/FlatColor" = {
       recursive = true;
-      source = ./theme;
-    };
+      source = pkgs.stdenv.mkDerivation {
+        name = "FlatColor";
 
+        src = pkgs.fetchFromGitHub {
+          owner = "jasperro";
+          repo = "FlatColor";
+          rev = "0a56c50e8c5e2ad35f6174c19a00e01b30874074";
+          hash = "sha256-P8RnYTk9Z1rCBEEMLTVRrNr5tUM/Pc9dsdMtpHd1Y18=";
+        };
+
+        buildPhase = ''
+          mkdir -p $out
+          # delete the default gtk-color-scheme:
+          file="./gtk-2.0/gtkrc"
+          sed -i '3,29d' $file
+          sed -i '3i include "../colors2"' $file
+
+          file="./gtk-3.0/gtk.css"
+          sed -i '2,10d' $file
+          sed -i '2i @import url("../colors3");' $file
+
+          file="./gtk-3.20/gtk.css"
+          sed -i '2,26d' $file
+          sed -i '2i @import url("../colors3");' $file
+
+          cp -r . $out
+        '';
+      };
+    };
     ".local/share/themes/FlatColor/colors2".text = ''
       bg_color:#${config.var.theme.colors.bg}
       color0:#${config.var.theme.colors.c0}

@@ -22,6 +22,8 @@
     ../../home/system/dunst
     ../../home/system/gtk
     ../../home/system/tofi
+    ../../home/system/mime
+    ../../home/system/batsignal
   ];
 
   home = {

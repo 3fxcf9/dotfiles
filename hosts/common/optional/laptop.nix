@@ -1,3 +1,6 @@
 {
-  services.tlp.enable = true;
+  services = {
+    upower.enable = true;
+    power-profiles-daemon.enable = true;
+  };
 }
