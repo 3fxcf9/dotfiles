@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Low battery warning
 - Fix Librewolf theme
 - Hibernation
 - Power menu

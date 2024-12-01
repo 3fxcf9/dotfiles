@@ -98,12 +98,12 @@ in {
         # FIXME: Ergol as layout ?
         # kb_layout = config.var.keyboardLayout;
         kb_layout = "ergol";
-        kb_options = "altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
+        # kb_options = "altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
         # kb_options = "ctrl:nocaps,altwin:swap_lalt_lwin"; # Caps lock is ctrl and SUPER/ALT are swapped
         follow_mouse = 1;
         scroll_method = "2fg";
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
-        repeat_delay = 200;
+        repeat_delay = 300;
         repeat_rate = 50;
         numlock_by_default = true;
         touchpad.natural_scroll = true;
@@ -116,7 +116,7 @@ in {
       bind = [
         "$MOD, SPACE, exec, tofi-drun"
         "$MOD, RETURN, exec, alacritty"
-        "$MOD SHIFT, A, killactive,"
+        "$MOD SHIFT, Q, killactive,"
 
         "$MOD, F,fullscreen, 1 # Maximizing"
         "$MOD SHIFT, F,fullscreen, 0 # Fullscreen"

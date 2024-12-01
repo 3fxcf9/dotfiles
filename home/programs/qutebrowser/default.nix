@@ -30,36 +30,6 @@
       }
     }
   '';
-
-  homepage = pkgs.buildNpmPackage {
-    pname = "homepage";
-    version = "0.0.0";
-
-    src = pkgs.fetchFromGitHub {
-      owner = "anotherhadi";
-      repo = "homepage";
-      rev = "b77d35ed3596eb451bd2ec78063d7cc6e73c773d";
-      hash = "sha256-j/40922kfAh6zqJ4IRYpr66YXNNYsxuXwZ0aiJFJea0=";
-    };
-
-    # npmDepsHash = lib.fakeHash;
-    npmDepsHash = "sha256-bG+CHTq2Rst3JMxsjAC81KhK+G7WwsTVD1eyP87g0z4=";
-
-    buildPhase = ''
-      npm install
-      cp ${
-        pkgs.writeText "src/routes/config.json" settings
-      } src/routes/config.json
-      npm run build
-      mkdir $out
-      mv build $out
-    '';
-
-    meta = {
-      description = "homepage";
-      homepage = "https://github.com/anotherhadi/homepage";
-    };
-  };
 in {
   programs.qutebrowser = {
     enable = true;
@@ -76,7 +46,6 @@ in {
     };
 
     quickmarks = {
-      home = "${homepage}/build/index.html";
       mynixos = "https://mynixos.com";
       github = "https://github.com";
       proton = "https://mail.proton.me/u/0/inbox";
@@ -84,10 +53,10 @@ in {
     };
 
     settings = {
-      url = {
-        default_page = "${homepage}/build/index.html";
-        start_pages = ["${homepage}/build/index.html"];
-      };
+      # url = {
+      #   default_page = "";
+      #   start_pages = [""];
+      # };
 
       colors = {
         tabs = {
@@ -231,9 +200,6 @@ in {
 
     keyBindings = {
       normal = {
-        "gh" = "open ${homepage}/build/index.html";
-        "gs" = "open https://home.anotherhadi.com";
-
         " p" = "tab-move -";
         " n" = "tab-move +";
         " w" = "tab-close";

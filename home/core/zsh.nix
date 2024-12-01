@@ -2,8 +2,17 @@
   pkgs,
   config,
   ...
-}: {
-  home.packages = with pkgs; [fd bat];
+}: let
+  texclean = pkgs.writeShellScriptBin "texclean" ''
+    if [ $# -eq 0 ]; then
+      echo "Usage: texclean <filename>"
+    else
+      filename="''${1%.*}"
+      rm -f "$filename".{aux,fdb_latexmk,fls,log,synctex.gz}
+    fi
+  '';
+in {
+  home.packages = [pkgs.fd pkgs.bat texclean];
 
   programs.fzf = {
     enable = true;
@@ -43,17 +52,11 @@
     history.size = 100000;
 
     initExtra = ''
-      # Aliases
-      texclean() {
-        if [ $# -eq 0 ]; then
-          echo "Usage: clean_latex <filename_without_extension>"
-        else
-          rm "$1".{aux,fdb_latexmk,fls,log,pdf,synctex.gz}
-        fi
+      # Zsh option
+      mkcd () {
+            mkdir -p "$1" && cd "$1"
       }
 
-
-      # Zsh option
       setopt interactivecomments # allow comments in interactive mode
       setopt magicequalsubst     # enable filename expansion for arguments of the form ‘anything=expression’
       setopt notify              # report the status of background jobs immediately

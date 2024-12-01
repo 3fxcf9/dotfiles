@@ -29,4 +29,6 @@ in {
   nixpkgs.config.allowUnfree = false;
 
   hardware.enableRedistributableFirmware = true;
+
+  boot.kernel.sysctl."kernel.sysrq" = 502;
 }

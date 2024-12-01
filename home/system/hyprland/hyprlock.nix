@@ -53,7 +53,7 @@
           color = "rgb(${config.var.theme.colors.fg})";
           font_family = config.var.theme.font;
           font_size = 64;
-          position = "0, 16";
+          position = "0, 50";
           halign = "center";
           valign = "center";
         }
