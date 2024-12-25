@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   services = {
     dbus.enable = true;
     gvfs.enable = true;
@@ -9,5 +13,5 @@
     '';
   };
   programs.dconf.enable = true;
-  environment.systemPackages = with pkgs; [usbutils];
+  environment.systemPackages = [pkgs.usbutils config.boot.kernelPackages.perf];
 }

@@ -78,7 +78,6 @@ in {
       decoration = {
         rounding = config.var.theme.rounding - config.var.theme.border-size;
         blur = {enabled = false;};
-        drop_shadow = false;
       };
 
       gestures = {

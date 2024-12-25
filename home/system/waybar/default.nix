@@ -45,18 +45,18 @@
           };
         };
         network = {
-          format = "{icon}{essid}";
-          format-alt = "{icon}{ipaddr}/{cidr}";
+          format = "<span foreground='#${config.var.theme.colors.accent}'>{icon}</span> {essid}";
+          format-alt = "<span foreground='#${config.var.theme.colors.accent}'>{icon}</span> {ipaddr}/{cidr}";
           format-alt-click = "click-left";
           format-icons = {
-            wifi = ["<span foreground='#${config.var.theme.colors.accent}'> </span>"];
-            ethernet = ["<span foreground='#${config.var.theme.colors.accent}'>󰈀 </span>"];
-            disconnected = ["<span foreground='#${config.var.theme.colors.accent}'>󰖪 </span>"];
+            wifi = [" "];
+            ethernet = ["󰈀 "];
+            disconnected = ["󰖪 "];
           };
           tooltip = false;
         };
         clock = {
-          format = "<span color='#${config.var.theme.colors.accent}'> </span>{:%a %d %b %H:%M:%S}";
+          format = "<span color='#${config.var.theme.colors.accent}'> </span> {:%a %d %b %H:%M:%S}";
           tooltip-format = "<tt><small>{calendar}</small></tt>";
           interval = 1;
           calendar = {
@@ -83,11 +83,11 @@
         # };
         cpu = {
           interval = 10;
-          format = "<span color='#${config.var.theme.colors.accent}'> </span>{usage}%";
+          format = "<span color='#${config.var.theme.colors.accent}'> </span> {usage}%";
         };
         memory = {
           interval = 30;
-          format = "<span color='#${config.var.theme.colors.accent}'> </span>{}%";
+          format = "<span color='#${config.var.theme.colors.accent}'> </span> {}%";
           max-length = 10;
         };
         temperature = {
@@ -96,7 +96,7 @@
         };
         disk = {
           interval = 30;
-          format = "<span foreground='#${config.var.theme.colors.accent}'> </span>{percentage_used}%";
+          format = "<span foreground='#${config.var.theme.colors.accent}'> </span> {percentage_used}%";
           path = "/";
         };
         backlight = {
@@ -143,7 +143,7 @@
     style = ''
       * {
         border: none;
-        font-family: '${config.var.theme.font}', 'symbols nerd font mono';
+        font-family: '${config.var.theme.font-mono}', 'symbols nerd font mono';
         font-size: ${toString config.var.theme.waybar.font-size}pt;
         box-shadow: none;
         text-shadow: none;

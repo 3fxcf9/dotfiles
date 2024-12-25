@@ -13,6 +13,8 @@
     ../../home/programs/qutebrowser
     ../../home/programs/signal-desktop
     ../../home/programs/texlive
+    ../../home/programs/zed-editor
+    ../../home/programs/rust
 
     # Scripts
     # ../../home/scripts/default.nix # All scripts

@@ -20,7 +20,6 @@
         vertical_alignment = "center";
 
         width = 400;
-        height = 400;
         scale = 0;
         gap_size = 0;
         transparency = 0;

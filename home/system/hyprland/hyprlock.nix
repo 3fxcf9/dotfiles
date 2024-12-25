@@ -51,7 +51,7 @@
           monitor = "";
           text = ''cmd[update:1000] echo "<b><big>$(date +"%H:%M:%S")</big></b>"'';
           color = "rgb(${config.var.theme.colors.fg})";
-          font_family = config.var.theme.font;
+          font_family = config.var.theme.font-mono;
           font_size = 64;
           position = "0, 50";
           halign = "center";
@@ -64,7 +64,7 @@
             cmd[update:60000] echo "<b><big>$(date +"%A %d %B %Y")</big></b>"
           '';
           color = "rgb(${config.var.theme.colors.fg})";
-          font_size = config.var.theme.font-size;
+          font_size = config.var.theme.font-size + 2;
           font_family = config.var.theme.font;
           position = "0, 0";
           halign = "center";
