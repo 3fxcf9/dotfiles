@@ -27,6 +27,7 @@
     ../common/optional/laptop.nix
     ../common/optional/anki.nix
     ../common/optional/graphics.nix
+    ../common/optional/bluetooth.nix
   ];
 
   boot = {

@@ -2,7 +2,13 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  anki-edit-launcher = pkgs.writeShellScriptBin "anki-edit-launcher" ''
+    curl localhost:8765 -X POST -s -d "{\"action\": \"guiAddCards\", \"params\": {\"note\": {\"deckName\": \"$(curl localhost:8765 -X POST -s -d '{"action": "deckNames", "version": 6}' | jq  -r '.result[]' | tofi)\", \"modelName\":\"Basic\"}}, \"version\": 6}"
+  '';
+in {
+  home.packages = [pkgs.curl pkgs.jq pkgs.tofi anki-edit-launcher];
+
   programs.waybar = {
     enable = true;
     package = pkgs.waybar.overrideAttrs (oldAttrs: {
@@ -17,7 +23,7 @@
         layer = config.var.theme.waybar.position;
         position = config.var.theme.waybar.position;
         height = 40;
-        modules-left = ["hyprland/workspaces" "network" "clock" "hyprland/submap"];
+        modules-left = ["hyprland/workspaces" "network" "clock" "hyprland/submap" "custom/anki"];
         modules-right = [
           # "custom/sonnerie"
           "cpu"
@@ -74,6 +80,11 @@
         };
         "hyprland/submap" = {
           format = "{}";
+          tooltip = false;
+        };
+        "custom/anki" = {
+          format = "<span color='#${config.var.theme.colors.accent}'>󰠮</span>";
+          on-click = "anki-edit-launcher";
           tooltip = false;
         };
         # "custom/sonnerie" = {
@@ -181,7 +192,7 @@
       }
       /* END */
 
-      #network, #clock, #workspaces, #idle_inhibitor, #battery {
+      #network, #clock, #workspaces, #idle_inhibitor, #battery, #custom-anki {
         border-radius: ${toString config.var.theme.rounding}px;
       }
 
@@ -203,7 +214,7 @@
         border: none;
       }
 
-      #network {
+      #network, #clock {
         margin-right: ${toString config.var.theme.gaps-out}px;
       }
 
