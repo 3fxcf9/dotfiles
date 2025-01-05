@@ -7,6 +7,7 @@
 
     # Programs
     ../../home/programs/alacritty
+    ../../home/programs/wezterm
     ../../home/programs/btop
     ../../home/programs/zathura
     ../../home/programs/firefox

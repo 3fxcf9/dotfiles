@@ -4,16 +4,18 @@
   nixConfig = {
     experimental-features = ["nix-command" "flakes"];
 
-    substituters = ["https://cache.nixos.org/"];
+    substituters = ["https://cache.nixos.org/" "https://wezterm.cachix.org"];
     extra-substituters = ["https://nix-community.cachix.org"];
     extra-trusted-public-keys = [
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      "wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="
     ];
   };
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/55d82ef11d2c9c5b94a6d121f7c67bb15c4be1df"; # FIXME: Temporary fix
 
     # Disko
     disko = {
@@ -26,6 +28,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wezterm.url = "github:wez/wezterm?dir=nix";
 
     # Nixvim
     nixvim.url = "github:3fxcf9/nixvim";

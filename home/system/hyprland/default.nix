@@ -114,7 +114,7 @@ in {
 
       bind = [
         "$MOD, SPACE, exec, tofi-drun"
-        "$MOD, RETURN, exec, alacritty"
+        "$MOD, RETURN, exec, wezterm"
         "$MOD SHIFT, Q, killactive,"
 
         "$MOD, F,fullscreen, 1 # Maximizing"

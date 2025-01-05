@@ -24,8 +24,8 @@ in {
     ];
     sessionVariables = {
       SHELL = "zsh";
-      TERM = "alacritty";
-      TERMINAL = "alacritty";
+      TERM = "wezterm";
+      TERMINAL = "wezterm";
       EDITOR = "nvim";
     };
   };

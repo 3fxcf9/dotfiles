@@ -68,7 +68,7 @@ in {
       PROMPT_EOL_MARK="" # hide EOL sign ('%')
 
       # Keybindings
-      bindkey -e
+      bindkey -v
       bindkey ' ' magic-space           # do history expansion on space
       bindkey '^[[1;5C' forward-word    # ctrl + ->
       bindkey '^[[1;5D' backward-word   # ctrl + <-

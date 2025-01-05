@@ -42,7 +42,7 @@
           };
         };
         env = {
-          TERM = "alacritty";
+          TERM = "wezterm";
         };
         # font_features = null;
         # font_size = null;
