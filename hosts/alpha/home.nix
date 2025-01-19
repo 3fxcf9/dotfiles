@@ -16,6 +16,7 @@
     ../../home/programs/texlive
     ../../home/programs/zed-editor
     ../../home/programs/rust
+    ../../home/programs/thunderbird
 
     # Scripts
     # ../../home/scripts/default.nix # All scripts

@@ -77,7 +77,19 @@
       config.enable_tab_bar = false
       config.window_decorations = "NONE"
 
+      config.use_ime = false
+
       return config
     '';
+    # config.use_dead_keys = true
+    # config.enable_kitty_keyboard = true
+    # config.enable_csi_u_key_encoding = true
+    # config.keys = {
+    #   {
+    #     key = 'o',
+    #     mods = 'NONE',
+    #     action = wezterm.action.DisableDefaultAssignment,
+    #   },
+    # },
   };
 }

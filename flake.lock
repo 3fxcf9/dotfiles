@@ -669,10 +669,10 @@
     "nix-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1722837542,
-        "narHash": "sha256-PKhx+GUm65Lq+GIa4WwLPiY2zoHfvBEn2oqu4oV37Mk=",
+        "lastModified": 1737308670,
+        "narHash": "sha256-H97zUMPw/EWR+FVTWay7VddI9d4HUAeuZKFdErQXQtI=",
         "ref": "main",
-        "rev": "059911491820cdf83910ed3032df2d2e673a8b7b",
+        "rev": "4556bf499c43a872e10922f3b7e3524da2439e16",
         "shallow": true,
         "type": "git",
         "url": "ssh://git@github.com/3fxcf9/nix-secrets.git"
@@ -832,11 +832,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1736095478,
-        "narHash": "sha256-o9RPh8bzqQ+eSJOOgIOtgsG3d8Iinbo1aMHRk/IzLWs=",
+        "lastModified": 1737320061,
+        "narHash": "sha256-xbR9swB01e8UgreRSe9QCQeeAmJl2Trwe4LItJS3TJw=",
         "owner": "3fxcf9",
         "repo": "nixvim",
-        "rev": "e2f2238781a363ef0e19b3c086d6cb20b7b7b223",
+        "rev": "72b757a723cdac0381d41a043ed2ae8f0d9c16d9",
         "type": "github"
       },
       "original": {
