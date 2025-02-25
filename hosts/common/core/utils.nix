@@ -14,4 +14,6 @@
   };
   programs.dconf.enable = true;
   environment.systemPackages = [pkgs.usbutils config.boot.kernelPackages.perf];
+
+  networking.firewall.allowedTCPPorts = [3680 8000]; # FIXME: Dev network port
 }

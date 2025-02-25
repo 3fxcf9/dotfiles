@@ -14,8 +14,8 @@
 
   inputs = {
     # Nixpkgs
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/55d82ef11d2c9c5b94a6d121f7c67bb15c4be1df"; # FIXME: Temporary fix
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/55d82ef11d2c9c5b94a6d121f7c67bb15c4be1df"; # FIXME: Temporary fix
 
     # Disko
     disko = {

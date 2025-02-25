@@ -5,7 +5,7 @@
       extraDefCfg = "process-unmapped-keys yes";
       config = ''
         (defsrc
-          caps a s d f g h j k l ; lalt
+          caps a s d f g h j k l ; lalt c
         )
         (defvar
           tap-time 150
@@ -22,14 +22,15 @@
           l (tap-hold $tap-time $hold-time l lmet)
           ; (tap-hold $tap-time $hold-time ; lalt)
           ralt-num (layer-toggle number-row)
+          c tab
         )
 
         (deflayer base
-          esc @a @s @d @f _ _ @j @k @l @; @ralt-num
+          esc @a @s @d @f _ _ @j @k @l @; @ralt-num @c
         )
 
         (deflayer number-row
-          _  1  2  3  4  5  6  7  8  9  0 _
+          _  1  2  3  4  5  6  7  8  9  0 _ _
         )
       '';
       # config = ''

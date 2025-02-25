@@ -3,6 +3,7 @@
 
   font = "Manrope Regular";
   font-mono = "MonaspiceNe Nerd Font";
+  font-mono-italic = "MonaspiceRn Nerd Font";
   font-size = 11;
 
   rounding = 6;

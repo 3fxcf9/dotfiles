@@ -46,7 +46,22 @@
       	bottom = ${toString config.var.theme.gaps-out},
       }
 
-      config.font = wezterm.font("${config.var.theme.font-mono}")
+      config.font = wezterm.font_with_fallback({
+        "${config.var.theme.font-mono}",
+        "${config.var.theme.font-mono-italic}",
+      })
+
+      config.font_rules = {
+        {
+          italic = true,
+          font = wezterm.font {
+            family = "${config.var.theme.font-mono-italic}",
+            style = "Italic",
+          },
+        },
+      }
+
+      --config.font = wezterm.font("${config.var.theme.font-mono}")
       config.harfbuzz_features = {
       	"calt=1",
       	"clig=1",
@@ -78,6 +93,13 @@
       config.window_decorations = "NONE"
 
       config.use_ime = false
+
+      config.keys = {
+        { key = "h", mods = "CTRL", action = wezterm.action.SendKey { key = "LeftArrow" } },
+        { key = "j", mods = "CTRL", action = wezterm.action.SendKey { key = "DownArrow" } },
+        { key = "k", mods = "CTRL", action = wezterm.action.SendKey { key = "UpArrow" } },
+        { key = "l", mods = "CTRL", action = wezterm.action.SendKey { key = "RightArrow" } },
+      }
 
       return config
     '';

@@ -10,22 +10,22 @@
 
     userKeymaps = [
       # TODO: Zed keyboard shortcuts
-      # {
-      #   context = "ProjectPanel && not_editing";
-      #   bindings = {
-      #     "space e" = "project_panel::Open";
-      #   };
-      # }
     ];
     userSettings = {
+      assistant = {
+        enabled = true;
+        version = "2";
+        default_open_ai_model = null;
+        default_model = {
+          provider = "zed.dev";
+          model = "claude-3-5-sonnet-latest";
+        };
+      };
       features = {
-        copilot = false;
+        copilot = true;
       };
       telemetry = {
         metrics = false;
-      };
-      assistant = {
-        enabled = false;
       };
 
       hour_format = "hour24";
