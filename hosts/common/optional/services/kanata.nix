@@ -22,7 +22,8 @@
           l (tap-hold $tap-time $hold-time l lmet)
           ; (tap-hold $tap-time $hold-time ; lalt)
           ralt-num (layer-toggle number-row)
-          c tab
+
+          c (fork tab c (lalt lmet lsft lctl rctl rsft rmet ralt))
         )
 
         (deflayer base

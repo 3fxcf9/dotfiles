@@ -95,10 +95,10 @@
       config.use_ime = false
 
       config.keys = {
-        { key = "h", mods = "CTRL", action = wezterm.action.SendKey { key = "LeftArrow" } },
-        { key = "j", mods = "CTRL", action = wezterm.action.SendKey { key = "DownArrow" } },
-        { key = "k", mods = "CTRL", action = wezterm.action.SendKey { key = "UpArrow" } },
-        { key = "l", mods = "CTRL", action = wezterm.action.SendKey { key = "RightArrow" } },
+        { key = "h", mods = "ALT", action = wezterm.action.SendKey { key = "LeftArrow" } },
+        { key = "j", mods = "ALT", action = wezterm.action.SendKey { key = "DownArrow" } },
+        { key = "k", mods = "ALT", action = wezterm.action.SendKey { key = "UpArrow" } },
+        { key = "l", mods = "ALT", action = wezterm.action.SendKey { key = "RightArrow" } },
       }
 
       return config
