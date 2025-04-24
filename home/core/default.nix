@@ -16,6 +16,7 @@ in {
   imports = scanPaths ./.;
 
   xdg.enable = true;
+  xdg.portal.config.common.default = ["gnome"];
 
   home = {
     stateVersion = lib.mkDefault "23.05";
@@ -32,8 +33,10 @@ in {
 
   home.packages = with pkgs; [
     # Utils
+    xdg-utils
     fd # `find` replacement
     eza
+    zoxide
     fzf
     ripgrep
     jq

@@ -45,6 +45,8 @@ in {
       ls = "eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions";
       ll = "eza --color=always --long";
 
+      # cd = "z";
+
       udm = "udisksctl mount -b";
       udum = "udisksctl unmount -b";
     };
