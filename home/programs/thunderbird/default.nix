@@ -1,5 +1,6 @@
 {
   pkgs,
+  unstable,
   config,
   inputs,
   ...
@@ -11,6 +12,7 @@
 in {
   programs.thunderbird = {
     enable = true;
+    package = unstable.thunderbird;
     profiles.${config.var.username} = {
       isDefault = true;
     };

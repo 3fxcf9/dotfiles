@@ -1,38 +1,11 @@
 {
-  pkgs,
   config,
+  unstable,
   ...
-}: let
-  settings = ''
-    {
-      "config": {
-        "title" : "Welcome Home",
-        "openLinksInNewTab": false,
-        "locale": "fr-FR",
-        "colors": {
-          "primary": "#${config.var.theme.colors.accent}",
-          "background": "#${config.var.theme.colors.bg}",
-          "foreground": "#${config.var.theme.colors.fg}",
-          "muted": "#${config.var.theme.colors.c8}"
-        },
-        "folders": [
-          {
-            "name": "Bookmarks",
-            "links": [
-              {"title": "MyNixOs", "url": "https://mynixos.com", "icon": "󱄅"},
-              {"title": "Github", "url": "https://github.com", "icon": ""},
-              {"title": "Proton", "url": "https://mail.proton.me/u/0/inbox", "icon": ""},
-              {"title": "Chat GPT", "url": "https://chat.openai.com/", "icon": "󰭹"},
-              {"title": "Wikipedia", "url": "https://fr.wikipedia.org/", "icon": "󰖬"}
-            ]
-          }
-        ]
-      }
-    }
-  '';
-in {
+}: {
   programs.qutebrowser = {
     enable = true;
+    package = unstable.qutebrowser;
 
     searchEngines = {
       "DEFAULT" = "https://duckduckgo.com/?q={}&ia=web";

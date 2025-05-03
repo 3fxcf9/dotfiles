@@ -1,5 +1,5 @@
 # https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
-{...}: let
+{unstable, ...}: let
   lock-false = {
     Value = false;
     Status = "locked";
@@ -12,16 +12,17 @@ in {
   programs = {
     firefox = {
       enable = true;
+      package = unstable.firefox;
       languagePacks = ["fr" "en-US"];
 
       profiles.default.search = {
         force = true;
-        default = "DuckDuckGo";
+        default = "ddg";
         engines = {
-          "Google".metaData.hidden = true;
-          "Amazon.com".metaData.hidden = true;
-          "Bing".metaData.hidden = true;
-          "eBay".metaData.hidden = true;
+          "boogle".metaData.hidden = true;
+          "amazondotcom-us".metaData.hidden = true;
+          "bing".metaData.hidden = true;
+          "ebay".metaData.hidden = true;
         };
       };
 

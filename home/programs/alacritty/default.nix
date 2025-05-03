@@ -1,6 +1,11 @@
-{config, ...}: {
+{
+  config,
+  unstable,
+  ...
+}: {
   programs.alacritty = {
     enable = true;
+    package = unstable.alacritty;
     settings = {
       keyboard.bindings = [
         {

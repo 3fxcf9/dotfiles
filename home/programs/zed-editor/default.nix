@@ -1,7 +1,7 @@
 {
-  pkgs,
   lib,
   config,
+  unstable,
   ...
 }: {
   programs.zed-editor = {
@@ -55,7 +55,7 @@
       lsp = {
         rust-analyzer = {
           binary = {
-            path = lib.getExe pkgs.rust-analyzer;
+            path = lib.getExe unstable.rust-analyzer;
           };
         };
       };

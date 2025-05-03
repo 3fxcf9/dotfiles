@@ -1,5 +1,6 @@
 {
   pkgs,
+  unstable,
   config,
   ...
 }: let
@@ -12,13 +13,20 @@
     fi
   '';
 in {
-  home.packages = [pkgs.fd pkgs.bat texclean];
+  home.packages = [unstable.fd unstable.bat texclean];
 
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
     defaultOptions = [
       "--bind=ctrl-r:down"
+    ];
+  };
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+    options = [
+      "--cmd cd"
     ];
   };
   home.sessionVariables.FZF_DEFAULT_OPTS = "--bind=ctrl-r:down";

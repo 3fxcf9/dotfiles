@@ -1,21 +1,7 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
+{unstable, ...}: {
+  home.packages = with unstable; [
     signal-desktop
   ];
 
-  nixpkgs.overlays = [
-    # Make Signal desktop display
-    (final: prev: {
-      signal-desktop = prev.signal-desktop.overrideAttrs (old: {
-        preFixup =
-          old.preFixup
-          + ''
-            gappsWrapperArgs+=(
-              --add-flags "--enable-features=UseOzonePlatform"
-              --add-flags "--ozone-platform=wayland"
-            )
-          '';
-      });
-    })
-  ];
+  # Signal-desktop overlay in hosts/common/core/default.nix
 }

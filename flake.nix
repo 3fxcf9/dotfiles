@@ -14,7 +14,8 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # Disko
     disko = {
@@ -24,7 +25,7 @@
 
     # Home Manager
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -40,7 +41,10 @@
     };
 
     # Hyprland window manager
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    hyprland = {
+      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Secret management
     sops-nix.url = "github:Mic92/sops-nix";
@@ -55,21 +59,35 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = {nixpkgs, ...} @ inputs: {
+  outputs = {
+    nixpkgs,
+    nixpkgs-unstable,
+    ...
+  } @ inputs: let
+    system = "x86_64-linux";
+    unstable = import nixpkgs-unstable {inherit system;};
+  in {
     formatter.x86_64-linux =
       nixpkgs.legacyPackages.x86_64-linux.nixfmt-classic;
 
     nixosConfigurations = {
       alpha = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs.inputs = inputs;
+        inherit system;
+        specialArgs = {
+          inherit inputs;
+          # inherit unstable;
+        };
+
         modules = [
           inputs.nixos-hardware.nixosModules.dell-inspiron-7405
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {
               backupFileExtension = "backup";
-              extraSpecialArgs = {inherit inputs;};
+              extraSpecialArgs = {
+                inherit inputs;
+                inherit unstable;
+              };
               useGlobalPkgs = true;
             };
           }

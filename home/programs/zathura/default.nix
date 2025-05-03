@@ -1,6 +1,11 @@
-{config, ...}: {
+{
+  config,
+  unstable,
+  ...
+}: {
   programs.zathura = {
     enable = true;
+    package = unstable.zathura;
 
     mappings = {
       r = "scroll down";

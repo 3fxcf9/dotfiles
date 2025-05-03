@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  unstable,
   ...
 }: let
   scanPaths = path:
@@ -31,18 +32,17 @@ in {
     };
   };
 
-  home.packages = with pkgs; [
+  home.packages = with unstable; [
     # Utils
     xdg-utils
     fd # `find` replacement
     eza
-    zoxide
-    fzf
     ripgrep
-    jq
+    # jq # already defined in home/system/waybar/default.nix
     tldr
     wget
-    curl
+    # curl # already defined in home/system/waybar/default.nix
+    tldr
     htop
     btop
     ncdu # TUI disk usage
@@ -56,12 +56,9 @@ in {
     unzip
     wget
 
-    # TODO: Notification
-    dunst
-    libnotify
-
     # Apps
     yazi
+    vimiv-qt
   ];
 
   nix = {

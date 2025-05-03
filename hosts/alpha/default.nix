@@ -51,7 +51,7 @@
     description = "${config.var.username} account";
     extraGroups = ["networkmanager" "wheel" "docker" "plugdev" "audio" "uinput"];
   };
-  home-manager.users.moi = import ./home.nix;
+  home-manager.users.${config.var.username} = import ./home.nix;
 
   services.xserver = {
     enable = true;

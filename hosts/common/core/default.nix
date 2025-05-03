@@ -2,6 +2,7 @@
   inputs,
   outputs,
   lib,
+  config,
   ...
 }: let
   scanPaths = path:
@@ -26,7 +27,29 @@ in {
 
   home-manager.extraSpecialArgs = {inherit inputs outputs;};
 
+  nix = {
+    settings = {
+      trusted-users = ["root" config.var.username];
+    };
+  };
+
   nixpkgs.config.allowUnfree = false;
+
+  # Make Signal desktop display
+  # nixpkgs.overlays = [
+  #   (final: prev: {
+  #     signal-desktop = prev.signal-desktop.overrideAttrs (old: {
+  #       preFixup =
+  #         old.preFixup
+  #         + ''
+  #           gappsWrapperArgs+=(
+  #             --add-flags "--enable-features=UseOzonePlatform"
+  #             --add-flags "--ozone-platform=wayland"
+  #           )
+  #         '';
+  #     });
+  #   })
+  # ];
 
   hardware.enableRedistributableFirmware = true;
 
