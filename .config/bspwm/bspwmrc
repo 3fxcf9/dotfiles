@@ -1,0 +1,49 @@
+#! /bin/sh
+
+setxkbmap fr -variant ergol
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         0
+bspc config window_gap          16
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer       true
+bspc config pointer_follows_focus true
+bspc config pointer_follows_monitor true
+bspc config initial_polarity          second_child
+
+bspc config pointer_action1           move
+bspc config pointer_action2           resize_side
+bspc config pointer_action3           resize_corner
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+# Natural scrolling
+xinput set-prop "DELL0CA9:00 27C6:0D53 Mouse" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "DELL0CA9:00 27C6:0D53 Touchpad" "libinput Natural Scrolling Enabled" 1
+
+# Keyboard rate
+xset r rate 300 50
+
+
+## Autostart ##
+
+run() {
+  if ! pidof -q "$1"; then
+    "$@" &
+  fi
+}
+
+# run feh --bg-scale ~/dotfiles/themes/wallpapers/main.jpg
+run xsetroot -solid "#7797cc"
+
+run sxhkd
+
+run polybar

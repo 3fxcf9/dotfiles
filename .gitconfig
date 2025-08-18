@@ -1,0 +1,6 @@
+[user]
+	signingkey = 3DC38575F4D22C50
+	email = 123954477+3fxcf9@users.noreply.github.com
+	name = 3fxcf9
+[commit]
+	gpgsign = true
