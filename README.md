@@ -50,7 +50,14 @@ makepkg -si
 Bspwm
 
 ```zsh
-sudo pacman -S bspwm sxhkd xorg-xinput xorg-xsetroot polybar
+sudo pacman -S bspwm sxhkd xorg-xinput xorg-xsetroot polybar maim xclip xdotool
+mkdir ~/Screenshots
+```
+
+Fix polybar backlight
+
+```zsh
+sudo chown $USER /sys/class/backlight/amdgpu_bl1/brightness
 ```
 
 Fonts
@@ -62,13 +69,13 @@ sudo pacman -S otf-monaspace-nerd
 Applications
 
 ```zsh
-sudo pacman -S kitty firefox btop neovim signal-desktop
+sudo pacman -S kitty firefox btop neovim signal-desktop pavucontrol man-db yazi
 ```
 
 Zsh
 
 ```zsh
-sudo pacman -S zsh
+sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting eza fzf fd
 paru -S pursarship    # Shell
 chsh -s $(which zsh)
 

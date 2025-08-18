@@ -39,7 +39,7 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,}
+super + {t,shift + t,v,}
 	bspc node -t {tiled,pseudo_tiled,floating}
 
 # set the node flags
@@ -108,3 +108,17 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# screenshots
+#
+super + s
+	maim -s ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
+
+super + shift + s
+	maim -s | xclip -selection clipboard -t image/png
+
+super + alt + s
+	maim -i $(xdotool getactivewindow) ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
+super + alt + shift + s
+	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
