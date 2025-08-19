@@ -1,0 +1,23 @@
+set adjust-open best-fit
+
+set statusbar-basename true
+
+# Disable loading icon during rendering
+set render-loading false
+
+set scroll-step 120 # px
+
+set default-bg "#181926"
+set default-fg "#c1c8d7"
+
+set recolor true
+set recolor-lightcolor "#181926"
+set recolor-darkcolor "#c1c8d7"
+
+# Synctex settings for inverse search with TexLab
+set synctex true
+set synctex-editor-command "texlab inverse-search -i %{input} -l %{line}"
+
+# Keybindings
+map f adjust_window best-fit
+
