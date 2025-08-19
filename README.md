@@ -69,13 +69,19 @@ sudo pacman -S otf-monaspace-nerd
 Applications
 
 ```zsh
-sudo pacman -S kitty firefox btop neovim signal-desktop pavucontrol man-db yazi
+sudo pacman -S kitty firefox btop neovim signal-desktop yazi zathura zathura-pdf-mupdf
+```
+
+Utils
+
+```zsh
+sudo pacman -S pavucontrol man-db unzip bat fd rg
 ```
 
 Zsh
 
 ```zsh
-sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting eza fzf fd
+sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting eza fzf
 paru -S pursarship    # Shell
 chsh -s $(which zsh)
 
@@ -106,10 +112,17 @@ systemctl --user start kanata.service
 Git and github
 
 ```
-sudo pacman -S github-cli
+sudo pacman -S github-cli git-delta
 gh auth login
 
 # Generate signing key
 gpg --gen-key
 gpg --list-secret-keys --keyid-format LONG
 ```
+
+## Dev
+
+```zsh
+paru -S vlang nodejs npm tree-sitter tree-sitter-cli
+```
+

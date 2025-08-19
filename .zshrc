@@ -77,7 +77,7 @@ mkcd () {
 
 alias nd="cd ~/dotfiles"
 alias ne="nvim ~/dotfiles"
-alias st="stow ~/dotfiles"
+alias st="(cd ~/dotfiles && stow .)"
 alias nml="nmcli device wifi rescan && nmcli device wifi list"
 alias nmc="nmcli device wifi connect"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"

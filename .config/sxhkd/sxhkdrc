@@ -113,12 +113,11 @@ super + {Left,Down,Up,Right}
 # screenshots
 #
 super + s
+	maim -s | xclip -selection clipboard -t image/png
+super + shift + s
 	maim -s ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
 
-super + shift + s
-	maim -s | xclip -selection clipboard -t image/png
-
 super + alt + s
-	maim -i $(xdotool getactivewindow) ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
-super + alt + shift + s
 	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+super + alt + shift + s
+	maim -i $(xdotool getactivewindow) ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
