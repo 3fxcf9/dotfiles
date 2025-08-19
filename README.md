@@ -1,5 +1,7 @@
 # My Arch Linux Configuration
 
+<img src="./assets/screenshot1.png" alt="screenshot"/>
+
 ## Installation
 
 In the live system
@@ -75,7 +77,7 @@ sudo pacman -S kitty firefox btop neovim signal-desktop yazi zathura zathura-pdf
 Utils
 
 ```zsh
-sudo pacman -S pavucontrol man-db unzip bat fd rg
+sudo pacman -S pavucontrol man-db unzip bat fd rg fastfetch cpufetch
 ```
 
 Zsh
