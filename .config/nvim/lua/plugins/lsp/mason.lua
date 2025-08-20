@@ -35,6 +35,7 @@ return {
         "eslint",
         "rust_analyzer",
         "v_analyzer",
+        "ocamllsp",
       },
     })
 
@@ -46,6 +47,7 @@ return {
         "black", -- python formatter
         "pylint",
         "eslint_d",
+        "ocamlformat",
       },
     })
   end,

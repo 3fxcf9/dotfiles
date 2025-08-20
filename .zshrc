@@ -94,6 +94,9 @@ source <(fzf --zsh)
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
+# Opam
+[[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null
+
 # Zsh extensions
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

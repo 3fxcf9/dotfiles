@@ -86,6 +86,10 @@ return {
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
     })
 
+    vim.lsp.config("ocamllsp", {
+      filetypes = { "ocaml" },
+    })
+
     vim.lsp.config("v_analyzer", {
       filetypes = { "v" },
     })

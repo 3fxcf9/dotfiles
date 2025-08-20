@@ -128,3 +128,10 @@ gpg --list-secret-keys --keyid-format LONG
 paru -S vlang nodejs npm tree-sitter tree-sitter-cli
 ```
 
+OCaml
+
+```zsh
+sudo pacman -S opam
+opam init -y
+opam install odoc utop  # ocaml-lsp and ocamlformat are managed by Mason
+```
