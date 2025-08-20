@@ -69,6 +69,9 @@ fi
 # GTK theme
 export GTK_THEME=Adwaita:dark
 
+# Editor
+export EDITOR=nvim
+
 ############## - ALIAS - #############
 
 mkcd () {
@@ -82,9 +85,14 @@ alias nml="nmcli device wifi rescan && nmcli device wifi list"
 alias nmc="nmcli device wifi connect"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias ll="eza --color=always --long"
+alias udm="udisksctl mount -b"
+alias udum="udisksctl unmount -b"
 
 # Fzf
 source <(fzf --zsh)
+
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
 
 # Zsh extensions
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

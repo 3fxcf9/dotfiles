@@ -1,0 +1,909 @@
+2025-08-20 15:52:43 [INFO]  v-analyzer started                  client_name=Neovim 0.11.3+v0.11.3 process_id=42627 os=linux arch=x64 executable=/home/moi/.local/share/nvim/mason/packages/v-analyzer/v-analyzer build_with=ff93ccb build_at=2025-02-27 12:54:03 build_commit=532bebd 
+2025-08-20 15:52:43 [INFO]  Global config not found
+2025-08-20 15:52:43 [INFO]  Creating default global analyzer config
+2025-08-20 15:52:43 [INFO]  Default analyzer config created at /home/moi/.config/v-analyzer/config.toml
+2025-08-20 15:52:43 [ERROR] No toolchain candidates found, some of the features won't work properly.
+Please, set `custom_vroot` in local or global config.
+2025-08-20 15:52:43 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:52:43 [ERROR] Failed to find V compiler!
+2025-08-20 15:52:43 [ERROR] Failed to find V standard library.
+2025-08-20 15:52:43 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:52:43 [INFO]  Request finished                    method=initialize duration=1.185ms 
+2025-08-20 15:52:43 [INFO]  -------- New session -------- 
+2025-08-20 15:52:43 [INFO]  Request finished                    method=initialized duration=17.544us 
+2025-08-20 15:52:43 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:52:43 [INFO]  Request finished                    method=textDocument/didOpen duration=1.611ms 
+2025-08-20 15:52:43 [INFO]  Global config not found
+2025-08-20 15:52:43 [INFO]  Creating default global analyzer config
+2025-08-20 15:52:43 [INFO]  Default analyzer config created at /home/moi/.config/v-analyzer/config.toml
+2025-08-20 15:52:43 [ERROR] No toolchain candidates found, some of the features won't work properly.
+Please, set `custom_vroot` in local or global config.
+2025-08-20 15:52:43 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:52:43 [ERROR] Failed to find V compiler!
+2025-08-20 15:52:43 [ERROR] Failed to find V standard library.
+2025-08-20 15:52:43 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:52:43 [INFO]  Request finished                    method=initialize duration=1.185ms 
+2025-08-20 15:52:43 [INFO]  -------- New session -------- 
+2025-08-20 15:52:43 [INFO]  Request finished                    method=initialized duration=17.544us 
+2025-08-20 15:52:43 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:52:43 [INFO]  Request finished                    method=textDocument/didOpen duration=1.611ms 
+2025-08-20 15:52:43 [INFO]  Updated diagnostics                 caller=LanguageServer.run_diagnostics duration=829.308us 
+2025-08-20 15:53:05 [INFO]  v-analyzer started                  client_name=Neovim 0.11.3+v0.11.3 process_id=43048 os=linux arch=x64 executable=/home/moi/.local/share/nvim/mason/packages/v-analyzer/v-analyzer build_with=ff93ccb build_at=2025-02-27 12:54:03 build_commit=532bebd 
+2025-08-20 15:53:05 [ERROR] No toolchain candidates found, some of the features won't work properly.
+Please, set `custom_vroot` in local or global config.
+2025-08-20 15:53:05 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:53:05 [ERROR] Failed to find V compiler!
+2025-08-20 15:53:05 [ERROR] Failed to find V standard library.
+2025-08-20 15:53:05 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:53:05 [INFO]  Request finished                    method=initialize duration=608.079us 
+2025-08-20 15:53:05 [INFO]  -------- New session -------- 
+2025-08-20 15:53:05 [INFO]  Request finished                    method=initialized duration=20.428us 
+2025-08-20 15:53:05 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:53:05 [INFO]  Request finished                    method=textDocument/didOpen duration=1.906ms 
+2025-08-20 15:53:05 [ERROR] No toolchain candidates found, some of the features won't work properly.
+Please, set `custom_vroot` in local or global config.
+2025-08-20 15:53:05 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:53:05 [ERROR] Failed to find V compiler!
+2025-08-20 15:53:05 [ERROR] Failed to find V standard library.
+2025-08-20 15:53:05 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:53:05 [INFO]  Request finished                    method=initialize duration=608.079us 
+2025-08-20 15:53:05 [INFO]  -------- New session -------- 
+2025-08-20 15:53:05 [INFO]  Request finished                    method=initialized duration=20.428us 
+2025-08-20 15:53:05 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:53:05 [INFO]  Request finished                    method=textDocument/didOpen duration=1.906ms 
+2025-08-20 15:53:05 [INFO]  Updated diagnostics                 caller=LanguageServer.run_diagnostics duration=653.555us 
+2025-08-20 15:54:19 [INFO]  v-analyzer started                  client_name=Neovim 0.11.3+v0.11.3 process_id=43535 os=linux arch=x64 executable=/home/moi/.local/share/nvim/mason/packages/v-analyzer/v-analyzer build_with=ff93ccb build_at=2025-02-27 12:54:03 build_commit=532bebd 
+2025-08-20 15:54:19 [INFO]  Find custom VROOT path in '/home/moi/.config/v-analyzer/config.toml' config
+2025-08-20 15:54:19 [INFO]  Using "/usr/lib/vlang" as toolchain
+2025-08-20 15:54:19 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:54:19 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:54:19 [INFO]  Request finished                    method=initialize duration=328.020us 
+2025-08-20 15:54:19 [INFO]  -------- New session -------- 
+2025-08-20 15:54:19 [INFO]  Adding indexing root                root=/home/moi/.vmodules 
+2025-08-20 15:54:19 [INFO]  Adding indexing root                root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:19 [INFO]  Adding indexing root                root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:19 [INFO]  Adding indexing root                root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:19 [INFO]  Indexing 4 roots
+2025-08-20 15:54:19 [INFO]  Indexing root                       root=/home/moi/.vmodules 
+2025-08-20 15:54:19 [INFO]  Loaded index in 2.543ms
+2025-08-20 15:54:19 [INFO]  Index loaded from cache             duration=2.550ms 
+2025-08-20 15:54:19 [INFO]  Indexing root                       root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:19 [INFO]  Loaded index in 105.258ms
+2025-08-20 15:54:19 [INFO]  Index loaded from cache             duration=105.268ms 
+2025-08-20 15:54:19 [INFO]  Indexing root                       root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:19 [INFO]  Loaded index in 183.307us
+2025-08-20 15:54:19 [INFO]  Index loaded from cache             duration=186.212us 
+2025-08-20 15:54:19 [INFO]  Indexing root                       root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:19 [INFO]  Loaded index in 67.217us
+2025-08-20 15:54:19 [INFO]  Index loaded from cache             duration=70.504us 
+2025-08-20 15:54:19 [INFO]  Indexing all roots                  duration=108.140ms 
+2025-08-20 15:54:19 [INFO]  Ensure indexed of 4 roots
+2025-08-20 15:54:19 [INFO]  Ensuring indexed root               root=/home/moi/.vmodules 
+2025-08-20 15:54:19 [INFO]  Reindexing finished                 duration=1.154ms 
+2025-08-20 15:54:19 [INFO]  Ensuring indexed root               root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:19 [INFO]  Reindexing finished                 duration=2.265ms 
+2025-08-20 15:54:19 [INFO]  Ensuring indexed root               root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/arrays.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/vweb.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Table.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/compile_time_reflection.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/channels.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Attribute.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Manualfree.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/builtin_compile_time.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Noreturn.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Flag.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Deprecated.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/errors.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/DeprecatedAfter.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/primitives.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/threads.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/attributes/Unsafe.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/c_decl.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/implicit.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/compile_time_constants.v 
+2025-08-20 15:54:19 [INFO]  File was modified, reindexing       uri=file:///home/moi/.config/v-analyzer/metadata/stubs/compile_time.v 
+2025-08-20 15:54:19 [INFO]  Reindexing finished                 duration=6.430ms 
+2025-08-20 15:54:19 [INFO]  Ensuring indexed root               root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:19 [INFO]  Reindexing finished                 duration=320.466us 
+2025-08-20 15:54:19 [INFO]  Ensure indexed of all roots         duration=10.198ms 
+2025-08-20 15:54:19 [INFO]  Build stubs index                   duration=43.386ms 
+2025-08-20 15:54:19 [INFO]  Request finished                    method=initialized duration=163.343ms 
+2025-08-20 15:54:19 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:54:19 [INFO]  Request finished                    method=textDocument/didOpen duration=1.316ms 
+2025-08-20 15:54:19 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=16.891ms 
+2025-08-20 15:54:19 [INFO]  unhandled method call               method= params= 
+2025-08-20 15:54:19 [INFO]  Request finished                    method= duration=2.314us 
+2025-08-20 15:54:19 [INFO]  Request finished                    method=textDocument/documentSymbol duration=255.413us 
+2025-08-20 15:54:20 [INFO]  Updated diagnostics                 caller=LanguageServer.run_diagnostics duration=114.570ms 
+2025-08-20 15:54:20 [INFO]  Request finished                    method=textDocument/documentHighlight duration=18.816us 
+2025-08-20 15:54:20 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:20 [INFO]  Request finished                    method=$/cancelRequest duration=2.325us 
+2025-08-20 15:54:20 [INFO]  Request finished                    method=textDocument/documentSymbol duration=186.272us 
+2025-08-20 15:54:20 [INFO]  Request finished                    method=textDocument/documentHighlight duration=40.546us 
+2025-08-20 15:54:20 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:20 [INFO]  Request finished                    method=$/cancelRequest duration=1.974us 
+2025-08-20 15:54:20 [INFO]  Request finished                    method=textDocument/documentSymbol duration=183.858us 
+2025-08-20 15:54:42 [INFO]  Request finished                    method=textDocument/documentHighlight duration=34.596us 
+2025-08-20 15:54:43 [INFO]  Request finished                    method=textDocument/documentHighlight duration=34.646us 
+2025-08-20 15:54:43 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:43 [INFO]  Request finished                    method=$/cancelRequest duration=4.127us 
+2025-08-20 15:54:43 [INFO]  Request finished                    method=textDocument/documentSymbol duration=434.141us 
+2025-08-20 15:54:43 [INFO]  Request finished                    method=textDocument/documentHighlight duration=29.876us 
+2025-08-20 15:54:43 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:43 [INFO]  Request finished                    method=$/cancelRequest duration=5.851us 
+2025-08-20 15:54:43 [INFO]  Request finished                    method=textDocument/documentSymbol duration=204.918us 
+2025-08-20 15:54:44 [INFO]  v-analyzer exiting with shutdown, exit code: 0
+2025-08-20 15:54:46 [INFO]  v-analyzer started                  client_name=Neovim 0.11.3+v0.11.3 process_id=43821 os=linux arch=x64 executable=/home/moi/.local/share/nvim/mason/packages/v-analyzer/v-analyzer build_with=ff93ccb build_at=2025-02-27 12:54:03 build_commit=532bebd 
+2025-08-20 15:54:46 [INFO]  Find custom VROOT path in '/home/moi/.config/v-analyzer/config.toml' config
+2025-08-20 15:54:46 [INFO]  Using "/usr/lib/vlang" as toolchain
+2025-08-20 15:54:46 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:54:46 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:54:46 [INFO]  Request finished                    method=initialize duration=303.844us 
+2025-08-20 15:54:46 [INFO]  -------- New session -------- 
+2025-08-20 15:54:46 [INFO]  Adding indexing root                root=/home/moi/.vmodules 
+2025-08-20 15:54:46 [INFO]  Adding indexing root                root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:46 [INFO]  Adding indexing root                root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:46 [INFO]  Adding indexing root                root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:46 [INFO]  Indexing 4 roots
+2025-08-20 15:54:46 [INFO]  Indexing root                       root=/home/moi/.vmodules 
+2025-08-20 15:54:46 [INFO]  Loaded index in 2.249ms
+2025-08-20 15:54:46 [INFO]  Index loaded from cache             duration=2.256ms 
+2025-08-20 15:54:46 [INFO]  Indexing root                       root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:46 [INFO]  Loaded index in 105.968ms
+2025-08-20 15:54:46 [INFO]  Index loaded from cache             duration=105.977ms 
+2025-08-20 15:54:46 [INFO]  Indexing root                       root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:46 [INFO]  Loaded index in 183.607us
+2025-08-20 15:54:46 [INFO]  Index loaded from cache             duration=186.312us 
+2025-08-20 15:54:46 [INFO]  Indexing root                       root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:46 [INFO]  Loaded index in 82.456us
+2025-08-20 15:54:46 [INFO]  Index loaded from cache             duration=85.131us 
+2025-08-20 15:54:46 [INFO]  Indexing all roots                  duration=108.569ms 
+2025-08-20 15:54:46 [INFO]  Ensure indexed of 4 roots
+2025-08-20 15:54:46 [INFO]  Ensuring indexed root               root=/home/moi/.vmodules 
+2025-08-20 15:54:46 [INFO]  Reindexing finished                 duration=1.088ms 
+2025-08-20 15:54:46 [INFO]  Ensuring indexed root               root=/usr/lib/vlang/vlib 
+2025-08-20 15:54:46 [INFO]  Reindexing finished                 duration=1.959ms 
+2025-08-20 15:54:46 [INFO]  Ensuring indexed root               root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:54:46 [INFO]  Reindexing finished                 duration=786.197us 
+2025-08-20 15:54:46 [INFO]  Ensuring indexed root               root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:54:46 [INFO]  Reindexing finished                 duration=454.519us 
+2025-08-20 15:54:46 [INFO]  Ensure indexed of all roots         duration=4.306ms 
+2025-08-20 15:54:46 [INFO]  Build stubs index                   duration=42.860ms 
+2025-08-20 15:54:46 [INFO]  Request finished                    method=initialized duration=155.985ms 
+2025-08-20 15:54:46 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:54:46 [INFO]  Request finished                    method=textDocument/didOpen duration=1.375ms 
+2025-08-20 15:54:46 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=23.041ms 
+2025-08-20 15:54:46 [INFO]  unhandled method call               method= params= 
+2025-08-20 15:54:46 [INFO]  Request finished                    method= duration=8.756us 
+2025-08-20 15:54:46 [INFO]  Request finished                    method=textDocument/documentSymbol duration=292.523us 
+2025-08-20 15:54:47 [INFO]  Request finished                    method=textDocument/documentHighlight duration=69.100us 
+2025-08-20 15:54:47 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:47 [INFO]  Request finished                    method=$/cancelRequest duration=3.747us 
+2025-08-20 15:54:47 [INFO]  Request finished                    method=textDocument/documentSymbol duration=246.757us 
+2025-08-20 15:54:49 [INFO]  Request finished                    method=textDocument/documentHighlight duration=18.094us 
+2025-08-20 15:54:49 [INFO]  got $/cancelRequest request
+2025-08-20 15:54:49 [INFO]  Request finished                    method=$/cancelRequest duration=2.054us 
+2025-08-20 15:54:49 [INFO]  Request finished                    method=textDocument/documentSymbol duration=221.378us 
+2025-08-20 15:54:53 [INFO]  Request finished                    method=textDocument/documentHighlight duration=40.035us 
+2025-08-20 15:54:54 [INFO]  Request finished                    method=textDocument/documentHighlight duration=58.571us 
+2025-08-20 15:54:54 [INFO]  Request finished                    method=textDocument/documentHighlight duration=71.936us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=41.438us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=42.671us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=29.937us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=34.165us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=58.851us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=41.007us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=44.824us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=41.919us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=41.889us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.790ms 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=46.678us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=26.901us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=47.109us 
+2025-08-20 15:54:55 [INFO]  Request finished                    method=textDocument/documentHighlight duration=30.889us 
+2025-08-20 15:54:58 [INFO]  Request finished                    method=textDocument/documentHighlight duration=51.317us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.317ms 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=100.811us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=62.809us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=57.619us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.352ms 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=77.247us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.902ms 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=43.132us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=57.088us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=73.790us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=129.495us 
+2025-08-20 15:54:59 [INFO]  Request finished                    method=textDocument/documentHighlight duration=100.390us 
+2025-08-20 15:55:00 [INFO]  Request finished                    method=textDocument/documentHighlight duration=102.183us 
+2025-08-20 15:55:00 [INFO]  Request finished                    method=textDocument/documentHighlight duration=2.322ms 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=176.564us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=75.432us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=72.197us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=57.760us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=47.710us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=38.703us 
+2025-08-20 15:55:01 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.508ms 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       duration=1.887ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8549 
+2025-08-20 15:55:02 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Updating stubs index...
+2025-08-20 15:55:02 [INFO]  Changed files: 1
+2025-08-20 15:55:02 [INFO]  Clearing type cache                 cache_size=283 
+2025-08-20 15:55:02 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:55:02 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=1.250ms 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/didChange duration=7.447ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.101ms 
+2025-08-20 15:55:02 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:02 [INFO]  Request finished                    method=$/cancelRequest duration=851ns 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentSymbol duration=218.113us 
+2025-08-20 15:55:02 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:02 [INFO]  Request finished                    method=$/cancelRequest duration=681ns 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=888.550us 
+2025-08-20 15:55:02 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:02 [INFO]  Request finished                    method=$/cancelRequest duration=1.112us 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentSymbol duration=105.520us 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=34.778ms 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       duration=1.200ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8550 
+2025-08-20 15:55:02 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Updating stubs index...
+2025-08-20 15:55:02 [INFO]  Changed files: 1
+2025-08-20 15:55:02 [INFO]  Clearing type cache                 cache_size=283 
+2025-08-20 15:55:02 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:55:02 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=557.856us 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/didChange duration=5.109ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.865us 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/completion duration=4.436ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.384ms 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       duration=1.291ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8551 
+2025-08-20 15:55:02 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Updating stubs index...
+2025-08-20 15:55:02 [INFO]  Changed files: 1
+2025-08-20 15:55:02 [INFO]  Clearing type cache                 cache_size=288 
+2025-08-20 15:55:02 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:55:02 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=708.410us 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/didChange duration=5.425ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=32.521us 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       duration=1.289ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8552 
+2025-08-20 15:55:02 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Updating stubs index...
+2025-08-20 15:55:02 [INFO]  Changed files: 1
+2025-08-20 15:55:02 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:02 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:02 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=561.763us 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/didChange duration=5.542ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.324us 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=31.898ms 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       duration=2.036ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8551 
+2025-08-20 15:55:02 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Updating stubs index...
+2025-08-20 15:55:02 [INFO]  Changed files: 1
+2025-08-20 15:55:02 [INFO]  Clearing type cache                 cache_size=267 
+2025-08-20 15:55:02 [INFO]  Clearing resolve cache              cache_size=435 
+2025-08-20 15:55:02 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=635.933us 
+2025-08-20 15:55:02 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/didChange duration=6.768ms 
+2025-08-20 15:55:02 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.517us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=2.172ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8552 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=2.000ms 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=7.527ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.549us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=2.464ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8553 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=558.647us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=8.243ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.535us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=2.346ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8554 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=2.025ms 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=7.564ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=29.496us 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=13.828ms 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=1.282ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8555 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=267 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=435 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=559.488us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=4.952ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=22.572us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=1.887ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8556 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=611.306us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=5.859ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.377us 
+2025-08-20 15:55:03 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:03 [INFO]  Request finished                    method=$/cancelRequest duration=1.823us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=1.221ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8557 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=643.517us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=5.675ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.484us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       duration=1.625ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8558 
+2025-08-20 15:55:03 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Updating stubs index...
+2025-08-20 15:55:03 [INFO]  Changed files: 1
+2025-08-20 15:55:03 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:03 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:03 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=661.821us 
+2025-08-20 15:55:03 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/didChange duration=5.641ms 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/documentHighlight duration=26.841us 
+2025-08-20 15:55:03 [INFO]  Request finished                    method=textDocument/completion duration=23.667ms 
+2025-08-20 15:55:04 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.815ms 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       duration=1.457ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8559 
+2025-08-20 15:55:05 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Updating stubs index...
+2025-08-20 15:55:05 [INFO]  Changed files: 1
+2025-08-20 15:55:05 [INFO]  Clearing type cache                 cache_size=275 
+2025-08-20 15:55:05 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:55:05 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=859.085us 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/didChange duration=5.799ms 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/documentHighlight duration=52.459us 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       duration=3.386ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8560 
+2025-08-20 15:55:05 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Updating stubs index...
+2025-08-20 15:55:05 [INFO]  Changed files: 1
+2025-08-20 15:55:05 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:05 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:05 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=592.831us 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/didChange duration=10.545ms 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.444us 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       duration=1.774ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8561 
+2025-08-20 15:55:05 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Updating stubs index...
+2025-08-20 15:55:05 [INFO]  Changed files: 1
+2025-08-20 15:55:05 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:05 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:05 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=607.369us 
+2025-08-20 15:55:05 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/didChange duration=8.175ms 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/documentHighlight duration=26.069us 
+2025-08-20 15:55:05 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.639ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.845ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8560 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=805.874us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=6.018ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.137ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8567 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=833.186us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=12.274ms 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.048us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.944ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8573 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=622.067us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=6.852ms 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/documentHighlight duration=31.890us 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.635ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.570ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8572 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=510.736us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=5.659ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.807ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8572 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=389.417us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=25.246ms 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.268us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.909ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8568 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=625.593us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=6.123ms 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/documentHighlight duration=26.410us 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=15.694ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=2.715ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8567 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=611.276us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=6.691ms 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       duration=1.077ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8572 
+2025-08-20 15:55:06 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Updating stubs index...
+2025-08-20 15:55:06 [INFO]  Changed files: 1
+2025-08-20 15:55:06 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:06 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:06 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=972.960us 
+2025-08-20 15:55:06 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/didChange duration=12.044ms 
+2025-08-20 15:55:06 [INFO]  Request finished                    method=textDocument/documentHighlight duration=74.922us 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.067ms 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       duration=1.196ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8571 
+2025-08-20 15:55:07 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Updating stubs index...
+2025-08-20 15:55:07 [INFO]  Changed files: 1
+2025-08-20 15:55:07 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:07 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:55:07 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=536.865us 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/didChange duration=5.029ms 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       duration=2.028ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8573 
+2025-08-20 15:55:07 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Updating stubs index...
+2025-08-20 15:55:07 [INFO]  Changed files: 1
+2025-08-20 15:55:07 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:07 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:07 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=1.752ms 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/didChange duration=10.682ms 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/documentHighlight duration=52.259us 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       duration=1.577ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8567 
+2025-08-20 15:55:07 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Updating stubs index...
+2025-08-20 15:55:07 [INFO]  Changed files: 1
+2025-08-20 15:55:07 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:07 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:07 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=534.631us 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/didChange duration=5.480ms 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.498us 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       duration=1.794ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8561 
+2025-08-20 15:55:07 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Updating stubs index...
+2025-08-20 15:55:07 [INFO]  Changed files: 1
+2025-08-20 15:55:07 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:07 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:07 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=584.675us 
+2025-08-20 15:55:07 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/didChange duration=5.665ms 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.778us 
+2025-08-20 15:55:07 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.983ms 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=1.773ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8560 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=578.684us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=5.576ms 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=1.137ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8567 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=923.407us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=12.829ms 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.386us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=1.718ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8573 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=842.814us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=6.509ms 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.428us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=2.150ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8572 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=19.975ms 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=25.629ms 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=29.506us 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.964ms 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=1.980ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8571 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=273 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=627.757us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=5.905ms 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       duration=1.176ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8568 
+2025-08-20 15:55:08 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Updating stubs index...
+2025-08-20 15:55:08 [INFO]  Changed files: 1
+2025-08-20 15:55:08 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:08 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:08 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=917.996us 
+2025-08-20 15:55:08 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/didChange duration=12.374ms 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=54.654us 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=16.821ms 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=2.214ms 
+2025-08-20 15:55:08 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:08 [INFO]  Request finished                    method=$/cancelRequest duration=1.283us 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentSymbol duration=339.853us 
+2025-08-20 15:55:08 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:08 [INFO]  Request finished                    method=$/cancelRequest duration=631ns 
+2025-08-20 15:55:08 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.041ms 
+2025-08-20 15:55:10 [INFO]  Reparsed file                       duration=2.012ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8549 
+2025-08-20 15:55:10 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Updating stubs index...
+2025-08-20 15:55:10 [INFO]  Changed files: 1
+2025-08-20 15:55:10 [INFO]  Clearing type cache                 cache_size=289 
+2025-08-20 15:55:10 [INFO]  Clearing resolve cache              cache_size=438 
+2025-08-20 15:55:10 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=550.942us 
+2025-08-20 15:55:10 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Request finished                    method=textDocument/didChange duration=5.916ms 
+2025-08-20 15:55:10 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:10 [INFO]  Request finished                    method=$/cancelRequest duration=1.893us 
+2025-08-20 15:55:10 [INFO]  Reparsed file                       duration=1.211ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8547 
+2025-08-20 15:55:10 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Updating stubs index...
+2025-08-20 15:55:10 [INFO]  Changed files: 1
+2025-08-20 15:55:10 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:55:10 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:55:10 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=585.998us 
+2025-08-20 15:55:10 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:55:10 [INFO]  Request finished                    method=textDocument/didChange duration=12.329ms 
+2025-08-20 15:55:10 [INFO]  Request finished                    method=textDocument/documentSymbol duration=247.378us 
+2025-08-20 15:55:10 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:10 [INFO]  Request finished                    method=$/cancelRequest duration=1.333us 
+2025-08-20 15:55:10 [INFO]  Request finished                    method=textDocument/documentSymbol duration=99.277us 
+2025-08-20 15:55:10 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=13.965ms 
+2025-08-20 15:55:11 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:11 [INFO]  Request finished                    method=$/cancelRequest duration=33.483us 
+2025-08-20 15:55:11 [INFO]  Request finished                    method=textDocument/documentSymbol duration=281.062us 
+2025-08-20 15:55:13 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:13 [INFO]  Request finished                    method=$/cancelRequest duration=20.869us 
+2025-08-20 15:55:13 [INFO]  Request finished                    method=textDocument/documentSymbol duration=235.956us 
+2025-08-20 15:55:15 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:15 [INFO]  Request finished                    method=$/cancelRequest duration=27.852us 
+2025-08-20 15:55:15 [INFO]  Request finished                    method=textDocument/documentSymbol duration=449.711us 
+2025-08-20 15:55:31 [INFO]  got $/cancelRequest request
+2025-08-20 15:55:31 [INFO]  Request finished                    method=$/cancelRequest duration=26.220us 
+2025-08-20 15:55:31 [INFO]  Request finished                    method=textDocument/documentSymbol duration=445.342us 
+2025-08-20 15:55:39 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:35 [INFO]  v-analyzer started                  client_name=Neovim 0.11.3+v0.11.3 process_id=44392 os=linux arch=x64 executable=/home/moi/.local/share/nvim/mason/packages/v-analyzer/v-analyzer build_with=ff93ccb build_at=2025-02-27 12:54:03 build_commit=532bebd 
+2025-08-20 15:56:35 [INFO]  Find custom VROOT path in '/home/moi/.config/v-analyzer/config.toml' config
+2025-08-20 15:56:35 [INFO]  Using "/usr/lib/vlang" as toolchain
+2025-08-20 15:56:35 [INFO]  Using "/home/moi/.cache/v-analyzer/532bebd_1740657296" as cache dir
+2025-08-20 15:56:35 [INFO]  Using "/home/moi/.vmodules" as vmodules root.
+2025-08-20 15:56:35 [INFO]  Request finished                    method=initialize duration=304.717us 
+2025-08-20 15:56:35 [INFO]  -------- New session -------- 
+2025-08-20 15:56:35 [INFO]  Adding indexing root                root=/home/moi/.vmodules 
+2025-08-20 15:56:35 [INFO]  Adding indexing root                root=/usr/lib/vlang/vlib 
+2025-08-20 15:56:35 [INFO]  Adding indexing root                root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:56:35 [INFO]  Adding indexing root                root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:56:35 [INFO]  Indexing 4 roots
+2025-08-20 15:56:35 [INFO]  Indexing root                       root=/home/moi/.vmodules 
+2025-08-20 15:56:35 [INFO]  Loaded index in 2.232ms
+2025-08-20 15:56:35 [INFO]  Index loaded from cache             duration=2.238ms 
+2025-08-20 15:56:35 [INFO]  Indexing root                       root=/usr/lib/vlang/vlib 
+2025-08-20 15:56:35 [INFO]  Loaded index in 103.833ms
+2025-08-20 15:56:35 [INFO]  Index loaded from cache             duration=103.842ms 
+2025-08-20 15:56:35 [INFO]  Indexing root                       root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:56:35 [INFO]  Loaded index in 177.957us
+2025-08-20 15:56:35 [INFO]  Index loaded from cache             duration=180.792us 
+2025-08-20 15:56:35 [INFO]  Indexing root                       root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:56:35 [INFO]  Loaded index in 69.291us
+2025-08-20 15:56:35 [INFO]  Index loaded from cache             duration=72.497us 
+2025-08-20 15:56:35 [INFO]  Indexing all roots                  duration=106.398ms 
+2025-08-20 15:56:35 [INFO]  Ensure indexed of 4 roots
+2025-08-20 15:56:35 [INFO]  Ensuring indexed root               root=/home/moi/.vmodules 
+2025-08-20 15:56:35 [INFO]  Reindexing finished                 duration=970.046us 
+2025-08-20 15:56:35 [INFO]  Ensuring indexed root               root=/usr/lib/vlang/vlib 
+2025-08-20 15:56:35 [INFO]  Reindexing finished                 duration=2.509ms 
+2025-08-20 15:56:35 [INFO]  Ensuring indexed root               root=/home/moi/.config/v-analyzer/metadata 
+2025-08-20 15:56:35 [INFO]  Reindexing finished                 duration=865.928us 
+2025-08-20 15:56:35 [INFO]  Ensuring indexed root               root=/home/moi/DEV/git/course_manager 
+2025-08-20 15:56:35 [INFO]  Reindexing finished                 duration=273.087us 
+2025-08-20 15:56:35 [INFO]  Ensure indexed of all roots         duration=4.644ms 
+2025-08-20 15:56:35 [INFO]  Build stubs index                   duration=41.566ms 
+2025-08-20 15:56:35 [INFO]  Request finished                    method=initialized duration=152.794ms 
+2025-08-20 15:56:35 [INFO]  Opened file                         uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v opened_files len=1 
+2025-08-20 15:56:35 [INFO]  Request finished                    method=textDocument/didOpen duration=1.366ms 
+2025-08-20 15:56:35 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=21.666ms 
+2025-08-20 15:56:35 [INFO]  unhandled method call               method= params= 
+2025-08-20 15:56:35 [INFO]  Request finished                    method= duration=3.948us 
+2025-08-20 15:56:35 [INFO]  Request finished                    method=textDocument/documentSymbol duration=285.359us 
+2025-08-20 15:56:36 [INFO]  Request finished                    method=textDocument/documentHighlight duration=60.315us 
+2025-08-20 15:56:36 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.325ms 
+2025-08-20 15:56:36 [INFO]  Request finished                    method=textDocument/documentHighlight duration=33.964us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=56.587us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=36.890us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.354ms 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=35.617us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.592ms 
+2025-08-20 15:56:37 [INFO]  Reparsed file                       duration=2.208ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8549 
+2025-08-20 15:56:37 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Updating stubs index...
+2025-08-20 15:56:37 [INFO]  Changed files: 1
+2025-08-20 15:56:37 [INFO]  Clearing type cache                 cache_size=283 
+2025-08-20 15:56:37 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:56:37 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=1.424ms 
+2025-08-20 15:56:37 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/didChange duration=7.791ms 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.522ms 
+2025-08-20 15:56:37 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:37 [INFO]  Request finished                    method=$/cancelRequest duration=1.573us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentSymbol duration=704.543us 
+2025-08-20 15:56:37 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:37 [INFO]  Request finished                    method=$/cancelRequest duration=7.695us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.826ms 
+2025-08-20 15:56:37 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:37 [INFO]  Request finished                    method=$/cancelRequest duration=2.535us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentSymbol duration=211.871us 
+2025-08-20 15:56:37 [INFO]  Reparsed file                       duration=1.477ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8550 
+2025-08-20 15:56:37 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Updating stubs index...
+2025-08-20 15:56:37 [INFO]  Changed files: 1
+2025-08-20 15:56:37 [INFO]  Clearing type cache                 cache_size=26 
+2025-08-20 15:56:37 [INFO]  Clearing resolve cache              cache_size=8 
+2025-08-20 15:56:37 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=716.526us 
+2025-08-20 15:56:37 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/didChange duration=5.540ms 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.997us 
+2025-08-20 15:56:37 [INFO]  Request finished                    method=textDocument/completion duration=24.164ms 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.649ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8551 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=27 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=8 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=622.858us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=5.750ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.507us 
+2025-08-20 15:56:38 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:38 [INFO]  Request finished                    method=$/cancelRequest duration=1.132us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.139ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8552 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=725.072us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=12.428ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=43.061us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.352ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8553 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=764.205us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=5.548ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=24.256us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.613ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8554 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=2.055ms 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=7.284ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.859us 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.519ms 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.241ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8555 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=267 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=435 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=639.840us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=5.157ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=23.144us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.914ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8556 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=651.993us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=5.886ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=22.603us 
+2025-08-20 15:56:38 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:38 [INFO]  Request finished                    method=$/cancelRequest duration=1.593us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.135ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8557 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=17.168ms 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=21.654ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=31.330us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       duration=1.404ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8558 
+2025-08-20 15:56:38 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Updating stubs index...
+2025-08-20 15:56:38 [INFO]  Changed files: 1
+2025-08-20 15:56:38 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:38 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:38 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=573.165us 
+2025-08-20 15:56:38 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/didChange duration=5.363ms 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.618us 
+2025-08-20 15:56:38 [INFO]  Request finished                    method=textDocument/completion duration=3.037ms 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=15.649ms 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       duration=1.321ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8559 
+2025-08-20 15:56:39 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Updating stubs index...
+2025-08-20 15:56:39 [INFO]  Changed files: 1
+2025-08-20 15:56:39 [INFO]  Clearing type cache                 cache_size=275 
+2025-08-20 15:56:39 [INFO]  Clearing resolve cache              cache_size=436 
+2025-08-20 15:56:39 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=545.813us 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/didChange duration=5.281ms 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.488us 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       duration=1.963ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8560 
+2025-08-20 15:56:39 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Updating stubs index...
+2025-08-20 15:56:39 [INFO]  Changed files: 1
+2025-08-20 15:56:39 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:39 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:39 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=1.968ms 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/didChange duration=7.263ms 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/documentHighlight duration=27.281us 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       duration=1.727ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8561 
+2025-08-20 15:56:39 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Updating stubs index...
+2025-08-20 15:56:39 [INFO]  Changed files: 1
+2025-08-20 15:56:39 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:39 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:39 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=596.739us 
+2025-08-20 15:56:39 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/didChange duration=5.509ms 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/documentHighlight duration=25.639us 
+2025-08-20 15:56:39 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.625ms 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentHighlight duration=158.840us 
+2025-08-20 15:56:40 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:40 [INFO]  Request finished                    method=$/cancelRequest duration=2.304us 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentSymbol duration=534.007us 
+2025-08-20 15:56:40 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:40 [INFO]  Request finished                    method=$/cancelRequest duration=1.432us 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentHighlight duration=83.378us 
+2025-08-20 15:56:40 [INFO]  Reparsed file                       duration=1.836ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8549 
+2025-08-20 15:56:40 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Updating stubs index...
+2025-08-20 15:56:40 [INFO]  Changed files: 1
+2025-08-20 15:56:40 [INFO]  Clearing type cache                 cache_size=289 
+2025-08-20 15:56:40 [INFO]  Clearing resolve cache              cache_size=437 
+2025-08-20 15:56:40 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=570.005us 
+2025-08-20 15:56:40 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/didChange duration=7.436ms 
+2025-08-20 15:56:40 [INFO]  Reparsed file                       duration=1.175ms file=/home/moi/DEV/git/course_manager/src/course_manager.v length=8547 
+2025-08-20 15:56:40 [INFO]  Marking document as dirty           uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Finished reindexing document        uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Updating stubs index...
+2025-08-20 15:56:40 [INFO]  Changed files: 1
+2025-08-20 15:56:40 [INFO]  Clearing type cache                 cache_size=0 
+2025-08-20 15:56:40 [INFO]  Clearing resolve cache              cache_size=0 
+2025-08-20 15:56:40 [INFO]  Updated stub indexes                caller=LanguageServer.did_change duration=16.981ms 
+2025-08-20 15:56:40 [INFO]  Reparsed file                       uri=file:///home/moi/DEV/git/course_manager/src/course_manager.v 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/didChange duration=28.602ms 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentHighlight duration=1.206ms 
+2025-08-20 15:56:40 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:40 [INFO]  Request finished                    method=$/cancelRequest duration=1.953us 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentHighlight duration=905.997us 
+2025-08-20 15:56:40 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:40 [INFO]  Request finished                    method=$/cancelRequest duration=962ns 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentSymbol duration=211.618us 
+2025-08-20 15:56:40 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:40 [INFO]  Request finished                    method=$/cancelRequest duration=852ns 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/documentSymbol duration=98.436us 
+2025-08-20 15:56:40 [INFO]  Request finished                    method=textDocument/semanticTokens/full duration=14.413ms 
+2025-08-20 15:56:41 [INFO]  Request finished                    method=textDocument/documentHighlight duration=2.881ms 
+2025-08-20 15:56:41 [INFO]  got $/cancelRequest request
+2025-08-20 15:56:41 [INFO]  Request finished                    method=$/cancelRequest duration=1.884us 
+2025-08-20 15:56:41 [INFO]  Request finished                    method=textDocument/documentSymbol duration=198.243us 

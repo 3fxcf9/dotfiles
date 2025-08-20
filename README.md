@@ -77,7 +77,7 @@ sudo pacman -S kitty firefox btop neovim signal-desktop yazi zathura zathura-pdf
 Utils
 
 ```zsh
-sudo pacman -S pavucontrol man-db unzip bat fd rg fastfetch cpufetch
+sudo pacman -S pavucontrol man-db unzip bat fd rg fastfetch cpufetch zoxide udisks2
 ```
 
 Zsh

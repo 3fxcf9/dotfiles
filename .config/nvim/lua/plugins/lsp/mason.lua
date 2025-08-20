@@ -33,7 +33,8 @@ return {
         "emmet_ls",
         "pyright",
         "eslint",
-	"rust_analyzer",
+        "rust_analyzer",
+        "v_analyzer",
       },
     })
 
