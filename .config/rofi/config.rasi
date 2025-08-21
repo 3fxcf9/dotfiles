@@ -1,0 +1,9 @@
+configuration {
+  modes: [ drun ];
+}
+
+@theme "custom"
+
+entry {
+    placeholder: "Type here";
+}

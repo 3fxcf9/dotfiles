@@ -141,3 +141,10 @@ opam install odoc utop  # ocaml-lsp and ocamlformat are managed by Mason
 ```zsh
 sudo pacman -S prusa-slicer
 ```
+
+School
+
+```zsh
+sudo pacman -S inkscape python3 python-pip rofi
+# TODO: Add course_manager setup
+```
