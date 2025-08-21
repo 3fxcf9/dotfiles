@@ -77,7 +77,7 @@ sudo pacman -S kitty firefox btop neovim signal-desktop yazi zathura zathura-pdf
 Utils
 
 ```zsh
-sudo pacman -S pavucontrol man-db unzip bat fd rg fastfetch cpufetch zoxide udisks2
+sudo pacman -S pavucontrol man-db unzip bat fd rg fastfetch cpufetch zoxide udisks2 jq
 ```
 
 Zsh
@@ -134,4 +134,10 @@ OCaml
 sudo pacman -S opam
 opam init -y
 opam install odoc utop  # ocaml-lsp and ocamlformat are managed by Mason
+```
+
+3D printing
+
+```zsh
+sudo pacman -S prusa-slicer
 ```
