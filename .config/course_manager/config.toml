@@ -4,7 +4,7 @@ browser = "luakit"
 
 [editor]
 command = 'kitty'
-args = ['--', 'nvim']
+args = ['--', 'nvim', '<filename>', "+cd <dir>"]
 
 [server]
 port = 8081
