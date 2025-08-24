@@ -152,4 +152,9 @@ sudo pacman -S texlive-basic texlive-latex texlive-latexrecommended texlive-font
 
 ### Course manager
 
+
+```zsh
+# Figure manager
+sudo pacman -S inotify-tools scour rofi inkscape
+```
 Add built binaries to `~/.local/bin`.
