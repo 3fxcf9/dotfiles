@@ -72,6 +72,9 @@ export GTK_THEME=Adwaita:dark
 # Editor
 export EDITOR=nvim
 
+# User binaries
+export PATH="$HOME/.local/bin:$PATH"
+
 ############## - ALIAS - #############
 
 mkcd () {

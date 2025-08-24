@@ -145,6 +145,11 @@ sudo pacman -S prusa-slicer
 School
 
 ```zsh
-sudo pacman -S inkscape python3 python-pip rofi
+sudo pacman -S inkscape python3 python-pip python-xlib rofi
+sudo pacman -S texlive-basic texlive-latex texlive-latexrecommended texlive-fontsrecommended texlive-mathscience texlive-latexextra pdf2svg
 # TODO: Add course_manager setup
 ```
+
+### Course manager
+
+Add built binaries to `~/.local/bin`.

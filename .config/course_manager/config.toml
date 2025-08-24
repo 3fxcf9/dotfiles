@@ -1,0 +1,10 @@
+[general]
+path = "~/School/MPE"
+browser = "luakit"
+
+[editor]
+command = 'kitty'
+args = ['--', 'nvim']
+
+[server]
+port = 8081

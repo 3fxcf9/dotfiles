@@ -58,6 +58,7 @@ if [[ $external_monitor = *connected* ]]; then
     MONITOR=HDMI-A-0 polybar main &
     MONITOR=eDP polybar external &
 else
-    bspc monitor -d 1 2 3 4 5 6 7 8 9
-    polybar main &
+    xrandr --output eDP --auto --rotate normal
+    MONITOR=eDP bspc monitor -d 1 2 3 4 5 6 7 8 9
+    MONITOR=eDP polybar main &
 fi

@@ -122,3 +122,12 @@ super + alt + s
 	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 super + alt + shift + s
 	maim -i $(xdotool getactivewindow) ~/Screenshots/$(date +screenshot_%Y-%m-%d-%H-%M-%S).png
+
+
+#
+# Course manager
+#
+super + e
+	~/.local/bin/course_manager edit
+super + o
+	~/.local/bin/course_manager open
