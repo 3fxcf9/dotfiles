@@ -6,6 +6,9 @@ return {
     -- import nvim-treesitter plugin
     local treesitter = require("nvim-treesitter.configs")
 
+    -- use markdown syntax for mde
+    vim.treesitter.language.register("markdown", "mde")
+
     -- configure treesitter
     treesitter.setup({ -- enable syntax highlighting
       highlight = {

@@ -1,5 +1,7 @@
 -- ~/.config/nvim/lua/luasnip/helpers.lua
 local ls = require("luasnip")
+local sn = ls.snippet_node
+local i = ls.insert_node
 
 local M = {}
 

@@ -9,37 +9,28 @@ local get_visual = require("_utils.get_visual").get_visual
 return {
   -- SUPERSCRIPT
   s(
-    { trig = "([%w%)%]%}])^", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "^", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- SUBSCRIPT
   s(
-    { trig = "([%w%)%]%}%'])_", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "_", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("_{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- SUBSCRIPT AND SUPERSCRIPT
   s(
-    { trig = "([%w%)%]%}%']);", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>^{<>}_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = ";", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}_{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- TEXT SUBSCRIPT
   s(
@@ -50,89 +41,68 @@ return {
   -- SUPERSCRIPT SHORTCUT
   -- Places the first alphanumeric character after the trigger into a superscript.
   s(
-    { trig = "([%w%)%]%}])'([%w])", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>^{<>}", {
+    { trig = "'([%w])", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
       f(function(_, snip)
         return snip.captures[1]
       end),
-      f(function(_, snip)
-        return snip.captures[2]
-      end),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- SUBSCRIPT SHORTCUT
   -- Places the first alphanumeric character after the trigger into a subscript.
   s(
-    { trig = "([%w%)%]%}%'])%.([%w])", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>_{<>}", {
+    { trig = "%.([%w])", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("_{<>}", {
       f(function(_, snip)
         return snip.captures[1]
       end),
-      f(function(_, snip)
-        return snip.captures[2]
-      end),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- EULER'S NUMBER SUPERSCRIPT SHORTCUT
   s(
-    { trig = "([^%a])ee", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>e^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "ee", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("e^{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.alpha_or_brackets_and_math }
   ),
   -- ZERO SUBSCRIPT SHORTCUT
   s(
-    { trig = "([%a%)%]%}])00", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "00", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("_{<>}", {
       t("0"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.letter_or_brackets_and_math }
   ),
   -- MINUS ONE SUPERSCRIPT SHORTCUT
   s(
-    { trig = "([%a%)%]%}])11", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "11", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("_{<>}", {
       t("-1"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.letter_or_brackets_and_math }
   ),
   -- CROSS SUPERSCRIPT
   s(
-    { trig = "([%a%)%]%}])XX", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<><>", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
-      t("^{\\times}"),
+    { trig = "XX", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
+      t("\\times"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.letter_or_brackets_and_math }
   ),
   -- TRANSPOSITION
   s(
-    { trig = "([%a%)%]%}])TT", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<><>", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "TT", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("<>", {
       t("\\transp"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.letter_or_brackets_and_math }
   ),
   -- STAR AFTER SET
   s(
-    { trig = "(\\[NZQRK])%*", regTrig = true, wordTrig = true, snippetType = "autosnippet" },
+    { trig = "(\\[NZQRCK])%*", regTrig = true, wordTrig = true, snippetType = "autosnippet" },
     fmta("<>^{*}", {
       f(function(_, snip)
         return snip.captures[1]
@@ -142,7 +112,7 @@ return {
   ),
   -- STAR AFTER SET (with plus)
   s(
-    { trig = "(\\[NZQRK]%_%{%+%})%*", regTrig = true, wordTrig = true, snippetType = "autosnippet" },
+    { trig = "(\\[NZQRCK]%_%{%+%})%*", regTrig = true, wordTrig = true, snippetType = "autosnippet" },
     fmta("<>^{*}", {
       f(function(_, snip)
         return snip.captures[1]
@@ -161,16 +131,13 @@ return {
     { condition = cond.in_mathzone }
   ),
   -- PLUS SUPERSCRIPT SHORTCUT
-  -- s(
-  -- 	{ trig = "([%a%)%]%}])%+%+", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-  -- 	fmta("<>^{<>}", {
-  -- 		f(function(_, snip)
-  -- 			return snip.captures[1]
-  -- 		end),
-  -- 		t("+"),
-  -- 	}),
-  -- 	{ condition = cond.in_mathzone }
-  -- ),
+  s(
+    { trig = "%+%+", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
+      t("+"),
+    }),
+    { condition = cond.letter_or_brackets_and_math }
+  ),
   -- COMPLEMENT SUPERSCRIPT
   -- s(
   -- 	{ trig = "([%a%)%]%}])CC", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -182,351 +149,290 @@ return {
   -- 	}),
   -- 	{ condition = cond.in_mathzone }
   -- ),
-  -- CONJUGATE (STAR) SUPERSCRIPT SHORTCUT
-  -- s(
-  -- 	{ trig = "([%a%)%]%}])%*%*", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-  -- 	fmta("<>^{<>}", {
-  -- 		f(function(_, snip)
-  -- 			return snip.captures[1]
-  -- 		end),
-  -- 		t("*"),
-  -- 	}),
-  -- 	{ condition = cond.in_mathzone }
-  -- ),
+  -- STAR SUPERSCRIPT SHORTCUT
+  s(
+    { trig = "%*%*", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
+      t("*"),
+    }),
+    { condition = cond.letter_or_brackets_and_math }
+  ),
   -- VECTOR, i.e. \vec
   s(
-    { trig = "([^%a])vv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\vec{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "vv", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\vec{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
   s(
-    { trig = "([^%a])ue", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\unitvector_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "ue", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\unit{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
-  -- UNIT VECTOR WITH HAT, i.e. \uvec{}
-  -- s(
-  -- 	{ trig = "([^%a])uv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-  -- 	fmta("<>\\uvec{<>}", {
-  -- 		f(function(_, snip)
-  -- 			return snip.captures[1]
-  -- 		end),
-  -- 		d(1, get_visual),
-  -- 	}),
-  -- 	{ condition = cond.in_mathzone }
-  -- ),
   -- MATRIX, i.e. \mtx
   s(
-    { trig = "([^%a])mt", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\mtx{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "mt", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\mtx{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- FRACTION
   s(
-    { trig = "([^%a])ff", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\frac{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "ff", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\frac{<>}{<>}", {
       d(1, get_visual),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- ANGLE
   s(
-    { trig = "([^%a])gg", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\ang{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "gg", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\ang{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- ABSOLUTE VALUE, i.e \abs
   s(
-    { trig = "([^%a])aa", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\abs{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "aa", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\abs{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
+  ),
+  -- CONJUGATE, i.e \overline
+  s(
+    { trig = "bar", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\bar{<>}", {
+      d(1, get_visual),
+    }),
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- INTERVALS
   s(
-    { trig = "([^%a])oo", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\oo{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "OO", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\oo{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   s(
-    { trig = "([^%a])of", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\oc{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "OC", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\oc{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   s(
-    { trig = "([^%a])co", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\co{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "CO", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\co{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   s(
-    { trig = "([^%a])cc", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\cc{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "CC", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\cc{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- TILDE
   s(
-    { trig = "([^%a])tll", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\tilde{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "tll", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\tilde{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- SQUARE ROOT
   s(
-    { trig = "([^%\\])sq", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\sqrt{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "sq", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\sqrt{<>}", {
       d(1, get_visual),
     }),
-    { condition = cond.in_mathzone }
+    {
+      condition = function(line_to_cursor, matched_trigger)
+        return line_to_cursor:sub(1, -(#matched_trigger + 1)):match("[^%\\]")
+          and cond.line_begin_or_non_letter_and_math(line_to_cursor, matched_trigger)
+      end,
+    }
   ),
   -- BINOMIAL SYMBOL
   s(
-    { trig = "([^%\\])bnn", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\binom{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
-      i(1),
+    { trig = "bnn", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\binom{<>}{<>}", {
+      d(1, get_visual),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- LOGARITHM WITH BASE SUBSCRIPT
   s(
-    { trig = "([^%a%\\])lg", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\log_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "ll", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\log_{<>}", {
       i(1),
     }),
-    { condition = cond.in_mathzone }
+    {
+      condition = function(line_to_cursor, matched_trigger)
+        return line_to_cursor:sub(1, -(#matched_trigger + 1)):match("[^%\\]")
+          and cond.line_begin_or_non_letter_and_math(line_to_cursor, matched_trigger)
+      end,
+    }
   ),
   -- DERIVATIVE with denominator only
   s(
-    { trig = "([^%a])dV", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\dv{}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
-      d(1, get_visual),
+    { trig = "dV", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\dv{}{<>}", {
+      i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- DERIVATIVE with numerator and denominator
   s(
-    { trig = "([^%a])dvv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\dv{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "dvv", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\dv{<>}{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- DERIVATIVE with numerator, denominator, and higher-order argument
   s(
-    { trig = "([^%a])ddv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\dvN{<>}{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "dvN", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\dvN{<>}{<>}{<>}", {
       i(1),
       i(2),
-      i(3),
+      i(3, "order"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- PARTIAL DERIVATIVE with denominator only
   s(
-    { trig = "([^%a])pV", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\pdv{}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
-      d(1, get_visual),
+    { trig = "pV", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\pdv{}{<>}", {
+      i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- PARTIAL DERIVATIVE with numerator and denominator
   s(
-    { trig = "([^%a])pvv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\pdv{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "pvv", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\pdv{<>}{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- PARTIAL DERIVATIVE with numerator, denominator, and higher-order argument
   s(
-    { trig = "([^%a])ppv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\pdvN{<>}{<>}{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "pvN", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\pdvN{<>}{<>}{<>}", {
       i(1),
       i(2),
-      i(3),
+      i(3, "order"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- SUM with lower limit
   s(
-    { trig = "([^%a])sM", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\sum_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "sM", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\sum_{<>}", {
       i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- SUM with upper and lower limit
   s(
-    { trig = "([^%a])smm", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\sum_{<>}^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "smm", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\sum_{<>}^{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- PRODUCT with lower limit
   s(
-    { trig = "([^%a])pD", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\prod_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "pD", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\prod_{<>}", {
       i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- PRODUCT with upper and lower limit
   s(
-    { trig = "([^%a])pdd", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\prod_{<>}^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "pdd", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\prod_{<>}^{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- INTEGRAL with only lower limit
   s(
-    { trig = "([^%a])intT", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\int_{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "intT", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\int_{<>}", {
       i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- INTEGRAL with upper and lower limit
   s(
-    { trig = "([^%a])intt", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\int_{<>}^{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "intt", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\int_{<>}^{<>}", {
       i(1),
       i(2),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- INTEGRAL from positive to negative infinity
   s(
-    { trig = "([^%a])intf", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\int_{\\infty}^{\\infty}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
+    { trig = "intt", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\int_{<>}^{<>}", {
+      t("\\inff"),
+      t("\\inff"),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
   -- INFTY
   s({ trig = "inff", snippetType = "autosnippet" }, {
     t("\\infty"),
-  }),
+  }, { condition = cond.line_begin_or_non_letter_and_math }),
   -- BOXED command
   s(
-    { trig = "([^%a])bb", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-    fmta("<>\\boxed{<>}", {
-      f(function(_, snip)
-        return snip.captures[1]
-      end),
-      d(1, get_visual),
+    { trig = "bb", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    fmta("\\boxed_{<>}", {
+      i(1),
     }),
-    { condition = cond.in_mathzone }
+    { condition = cond.line_begin_or_non_letter_and_math }
   ),
+
   --
   -- BEGIN STATIC SNIPPETS
   --
 
+  -- GEQ
+  s({ trig = "geq", snippetType = "autosnippet" }, {
+    t("\\geq "),
+  }, { condition = cond.in_mathzone }),
+  -- LEQ
+  s({ trig = "leq", snippetType = "autosnippet" }, {
+    t("\\leq "),
+  }, { condition = cond.in_mathzone }),
+  -- ≥
+  s({ trig = ">=", snippetType = "autosnippet", priority = 2000 }, {
+    t("\\geq"),
+  }, { condition = cond.in_mathzone }),
+  -- ≤
+  s({ trig = "<=", snippetType = "autosnippet", priority = 2000 }, {
+    t("\\leq"),
+  }, { condition = cond.in_mathzone }),
   -- FORALL, i.e. \forall
   s({ trig = "ll", priority = 2000, snippetType = "autosnippet" }, {
     t("\\forall "),
@@ -555,6 +461,10 @@ return {
   s({ trig = "||", snippetType = "autosnippet" }, {
     t("\\parallel "),
   }, { condition = cond.in_mathzone }),
+  -- GRADIENT OPERATOR, i.e. \grad
+  s({ trig = "gdd", snippetType = "autosnippet" }, {
+    t("\\grad "),
+  }, { condition = cond.in_mathzone }),
   -- CDOTS, i.e. \cdots
   s({ trig = "cdd", snippetType = "autosnippet" }, {
     t("\\cdots"),
@@ -574,6 +484,10 @@ return {
   -- SUBSET, i.e. \subset
   s({ trig = "sbb", snippetType = "autosnippet" }, {
     t("\\subset "),
+  }, { condition = cond.in_mathzone }),
+  -- SUBSETEQ, i.e., \subseteq
+  s({ trig = "sbq", snippetType = "autosnippet" }, {
+    t("\\subseteq "),
   }, { condition = cond.in_mathzone }),
   -- APPROX, i.e. \approx
   s({ trig = "px", snippetType = "autosnippet" }, {
@@ -630,18 +544,18 @@ return {
     }),
     { condition = cond.in_mathzone }
   ),
-  -- GEQ
-  s({ trig = "geq", snippetType = "autosnippet" }, {
-    t("\\geq "),
-  }, { condition = cond.in_mathzone }),
-  -- LEQ
-  s({ trig = "leq", snippetType = "autosnippet" }, {
-    t("\\leq "),
-  }, { condition = cond.in_mathzone }),
   -- IN
   s({ trig = "nn", snippetType = "autosnippet" }, {
     t("\\in "),
   }, { condition = cond.in_mathzone }),
+  -- Logical not
+  s({ trig = "lN", snippetType = "autosnippet" }, {
+    t("\\lnot "),
+  }, {
+    condition = function(line_to_cursor, matched_trigger)
+      return line_to_cursor:sub(1, -(#matched_trigger + 1)):match("[^%\\]")
+    end,
+  }),
   -- LAND
   s({ trig = "and", snippetType = "autosnippet" }, {
     t("\\land "),
@@ -660,7 +574,7 @@ return {
   }, { condition = cond.in_mathzone }),
   -- Ker
   s({ trig = "[kK]er", regTrig = true, snippetType = "autosnippet" }, {
-    t("\\Ker "),
+    t("\\ker "),
   }, { condition = cond.in_mathzone }),
   -- IDENTITY FUNCTION
   s(
@@ -719,6 +633,15 @@ return {
   s({ trig = "deg", regTrig = true, snippetType = "autosnippet" }, {
     t("\\deg "),
   }, { condition = cond.in_mathzone }),
+  -- UNDERBRACE
+  s(
+    { trig = "uu", snippetType = "autosnippet" },
+    fmta("\\underbrace{<>}_{<>}", {
+      d(1, get_visual),
+      i(2),
+    }),
+    { condition = cond.in_mathzone }
+  ),
 
   -- -- COMPLETE SETS AFTER \in
   -- s(

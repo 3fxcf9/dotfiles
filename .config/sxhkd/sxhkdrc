@@ -46,6 +46,11 @@ super + {t,shift + t,v,}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
+# Change split direction
+super + x
+	bspc node @parent -R 90
+
+
 #
 # focus/swap
 #

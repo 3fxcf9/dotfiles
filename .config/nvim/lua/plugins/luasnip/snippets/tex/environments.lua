@@ -1,7 +1,7 @@
 ---@diagnostic disable: undefined-global
 
 ------------------------------------------------------------------------------
-local cond = require("_utils.mathzone_detection")
+local cond = require("_utils.contextual_conditions")
 local line_begin = require("luasnip.extras.conditions.expand").line_begin
 local get_visual = require("_utils.get_visual").get_visual
 ------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ return {
       end),
       d(1, get_visual),
     }),
-    { condition = cond.not_in_mathzone }
+    { condition = cond.in_text }
   ),
   -- INLINE MATH ON NEW LINE
   s(
@@ -24,7 +24,7 @@ return {
     fmta("$<>$", {
       i(1),
     }),
-    { condition = cond.not_in_mathzone }
+    { condition = cond.in_text }
   ),
   -- GENERIC ENVIRONMENT
   s(

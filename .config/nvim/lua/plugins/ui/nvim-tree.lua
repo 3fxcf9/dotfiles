@@ -9,10 +9,14 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup({
+      update_focused_file = {
+        enable = true,
+        update_root = true,
+      },
       view = {
         width = 35,
         relativenumber = true,
-	side = "right",
+        side = "right",
       },
       -- change folder arrow icons
       renderer = {
@@ -27,13 +31,13 @@ return {
         --     },
         --   },
         -- },
-	special_files = {
-           "Cargo.toml",
-	   "Makefile",
-	   "README.md",
-	   "readme.md",
-	   "v.mod",
-	},
+        special_files = {
+          "Cargo.toml",
+          "Makefile",
+          "README.md",
+          "readme.md",
+          "v.mod",
+        },
       },
       -- disable window_picker for
       -- explorer to work well with
