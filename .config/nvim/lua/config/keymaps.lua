@@ -49,7 +49,12 @@ keymap.set("v", ">", ">gv")
 -- LSP
 keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>")
 keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "LSP Format" })
-keymap.set("n", "<leader>lH", "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(), { bufnr })<cr>", { desc = "Toggle inlay hints" })
+keymap.set(
+  "n",
+  "<leader>lH",
+  "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(), { bufnr })<cr>",
+  { desc = "Toggle inlay hints" }
+)
 
 -- Exit terminal
 keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal" })

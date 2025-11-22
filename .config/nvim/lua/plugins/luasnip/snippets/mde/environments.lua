@@ -96,4 +96,32 @@ return {
     ),
     { condition = line_begin }
   ),
+  -- CASES
+  s(
+    { trig = "css", snippetType = "autosnippet" },
+    fmta(
+      [[
+        \begin{cases}<>\end{cases}
+      ]],
+      {
+        i(1),
+      }
+    ),
+    { condition = cond.in_mathzone }
+  ),
+  -- DISPLAY CASES
+  s(
+    { trig = "dcss", snippetType = "autosnippet" },
+    fmta(
+      [[
+        \begin{cases}
+          <>
+        \end{cases}
+      ]],
+      {
+        i(1),
+      }
+    ),
+    { condition = cond.in_mathzone }
+  ),
 }

@@ -9,7 +9,7 @@ local get_visual = require("_utils.get_visual").get_visual
 return {
   -- SUPERSCRIPT
   s(
-    { trig = "^", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    { trig = "%^", wordTrig = false, regTrig = false, snippetType = "autosnippet", priority = 2000 },
     fmta("^{<>}", {
       d(1, get_visual),
     }),
@@ -17,7 +17,7 @@ return {
   ),
   -- SUBSCRIPT
   s(
-    { trig = "_", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    { trig = "_", wordTrig = false, regTrig = false, snippetType = "autosnippet", priority = 2000 },
     fmta("_{<>}", {
       d(1, get_visual),
     }),
@@ -79,7 +79,7 @@ return {
   -- MINUS ONE SUPERSCRIPT SHORTCUT
   s(
     { trig = "11", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
-    fmta("_{<>}", {
+    fmta("^{<>}", {
       t("-1"),
     }),
     { condition = cond.letter_or_brackets_and_math }
@@ -138,6 +138,14 @@ return {
     }),
     { condition = cond.letter_or_brackets_and_math }
   ),
+  -- MINUS SUPERSCRIPT SHORTCUT
+  s(
+    { trig = "%-%-", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("^{<>}", {
+      t("-"),
+    }),
+    { condition = cond.letter_or_brackets_and_math }
+  ),
   -- COMPLEMENT SUPERSCRIPT
   -- s(
   -- 	{ trig = "([%a%)%]%}])CC", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -165,14 +173,14 @@ return {
     }),
     { condition = cond.line_begin_or_non_letter_and_math }
   ),
-  -- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
-  s(
-    { trig = "ue", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
-    fmta("\\unit{<>}", {
-      d(1, get_visual),
-    }),
-    { condition = cond.line_begin_or_non_letter_and_math }
-  ),
+  -- -- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
+  -- s(
+  --   { trig = "ue", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+  --   fmta("\\unit{<>}", {
+  --     d(1, get_visual),
+  --   }),
+  --   { condition = cond.line_begin_or_non_letter_and_math }
+  -- ),
   -- MATRIX, i.e. \mtx
   s(
     { trig = "mt", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
@@ -211,6 +219,22 @@ return {
     { trig = "bar", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
     fmta("\\bar{<>}", {
       d(1, get_visual),
+    }),
+    { condition = cond.line_begin_or_non_letter_and_math }
+  ),
+  -- NORM, i.e \norm
+  s(
+    { trig = "norm", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\norm{<>}", {
+      i(1, "\\cdot"),
+    }),
+    { condition = cond.line_begin_or_non_letter_and_math }
+  ),
+  -- TRIPLE NORM, i.e \opnorm
+  s(
+    { trig = "opnorm", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\opnorm{<>}", {
+      i(1, "\\cdot"),
     }),
     { condition = cond.line_begin_or_non_letter_and_math }
   ),
@@ -407,7 +431,7 @@ return {
   -- BOXED command
   s(
     { trig = "bb", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
-    fmta("\\boxed_{<>}", {
+    fmta("\\boxed{<>}", {
       i(1),
     }),
     { condition = cond.line_begin_or_non_letter_and_math }
@@ -426,11 +450,11 @@ return {
     t("\\leq "),
   }, { condition = cond.in_mathzone }),
   -- ≥
-  s({ trig = ">=", snippetType = "autosnippet", priority = 2000 }, {
-    t("\\geq"),
+  s({ trig = ">=", snippetType = "autosnippet", wordTrig = false, priority = 2000 }, {
+    t("\\geq "),
   }, { condition = cond.in_mathzone }),
   -- ≤
-  s({ trig = "<=", snippetType = "autosnippet", priority = 2000 }, {
+  s({ trig = "<=", wordTrig = false, snippetType = "autosnippet", priority = 2000 }, {
     t("\\leq"),
   }, { condition = cond.in_mathzone }),
   -- FORALL, i.e. \forall
@@ -577,16 +601,10 @@ return {
     t("\\ker "),
   }, { condition = cond.in_mathzone }),
   -- IDENTITY FUNCTION
-  s(
-    { trig = "[iI]d", regTrig = true, snippetType = "autosnippet" },
-    fmta("\\Id_{<>}", {
-      i(1),
-    }),
-    { condition = cond.in_mathzone }
-  ),
+  s({ trig = "[iI]d", regTrig = true, snippetType = "autosnippet" }, t("\\id "), { condition = cond.in_mathzone }),
   -- FUNCTION IMAGE
   s({ trig = "[iI]mg", regTrig = true, snippetType = "autosnippet" }, {
-    t("\\Img "),
+    t("\\img "),
   }, { condition = cond.in_mathzone }),
   -- RANK
   s({ trig = "rg", regTrig = true, snippetType = "autosnippet" }, {
@@ -605,21 +623,11 @@ return {
     { condition = cond.in_mathzone }
   ),
   -- DIM
-  s(
-    { trig = "[dD]im", regTrig = true, snippetType = "autosnippet" },
-    fmta("\\dim_{<>} ", {
-      i(1),
-    }),
-    { condition = cond.in_mathzone }
-  ),
+  s({ trig = "[dD]im", regTrig = true, snippetType = "autosnippet" }, t("\\dim "), { condition = cond.in_mathzone }),
   -- DET
-  s(
-    { trig = "[dD]et", regTrig = true, snippetType = "autosnippet" },
-    fmta("\\det_{<>} ", {
-      i(1),
-    }),
-    { condition = cond.in_mathzone }
-  ),
+  s({ trig = "[dD]et", regTrig = true, snippetType = "autosnippet" }, {
+    t("\\det "),
+  }, { condition = cond.in_mathzone }),
   -- SCALAR PRODUCT
   s(
     { trig = "scc", regTrig = true, snippetType = "autosnippet" },

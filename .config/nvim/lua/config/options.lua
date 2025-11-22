@@ -22,7 +22,7 @@ opt.scrolloff = 8
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
-opt.incsearch = true;
+opt.incsearch = true
 opt.hlsearch = true
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 opt.backspace = "indent,eol,start"
@@ -49,3 +49,16 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 opt.fileencoding = "utf-8"
+
+-- Neovide
+if vim.g.neovide then
+  vim.o.guifont = "MonaspiceNe Nerd Font:h8"
+  vim.g.neovide_background_color = "#181926"
+  local padding = 16
+  vim.g.neovide_padding_top = padding
+  vim.g.neovide_padding_bottom = padding
+  vim.g.neovide_padding_right = padding
+  vim.g.neovide_padding_left = padding
+  vim.g.neovide_cursor_animation_length = 0.150
+  vim.g.neovide_theme = "tokyonight"
+end

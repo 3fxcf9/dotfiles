@@ -3,6 +3,9 @@ return {
   priority = 1000,
   config = function()
     local transparent = true
+    if vim.g.neovide then
+      transparent = false
+    end
 
     local bg = "#181926"
     local bg_dark = "#011423"

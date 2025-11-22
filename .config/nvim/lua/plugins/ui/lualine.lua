@@ -49,6 +49,10 @@ return {
       },
     }
 
+    local function getWords()
+      return tostring(vim.fn.wordcount().words)
+    end
+
     -- configure lualine with modified theme
     lualine.setup({
       options = {
@@ -64,6 +68,7 @@ return {
           { "encoding" },
           { "fileformat" },
           { "filetype" },
+          { getWords },
         },
       },
     })

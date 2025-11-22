@@ -227,17 +227,17 @@ return {
 		}),
 		{ condition = _G.in_mathzone }
 	),
-	-- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
-	s(
-		{ trig = "([^%a])ue", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-		fmta("<>\\unitvector_{<>}", {
-			f(function(_, snip)
-				return snip.captures[1]
-			end),
-			d(1, get_visual),
-		}),
-		{ condition = _G.in_mathzone }
-	),
+	-- -- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
+	-- s(
+	--  	{ trig = "([^%a])ue", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+	-- 	fmta("<>\\unitvector_{<>}", {
+	-- 		f(function(_, snip)
+	-- 			return snip.captures[1]
+	-- 		end),
+	-- 		d(1, get_visual),
+	-- 	}),
+	-- 	{ condition = _G.in_mathzone }
+	-- ),
 	-- UNIT VECTOR WITH HAT, i.e. \uvec{}
 	-- s(
 	-- 	{ trig = "([^%a])uv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },

@@ -142,6 +142,15 @@ opam install odoc utop  # ocaml-lsp and ocamlformat are managed by Mason
 sudo pacman -S prusa-slicer
 ```
 
+Syncthing
+
+```zsh
+sudo pacman -S syncthing
+sudo systemctl enable syncthing@moi.service
+sudo systemctl start syncthing@moi.service
+# SET USERNAME AND PASSWORD: localhost:8384
+```
+
 School
 
 ```zsh
@@ -158,3 +167,5 @@ sudo pacman -S texlive-basic texlive-latex texlive-latexrecommended texlive-font
 sudo pacman -S inotify-tools scour rofi inkscape
 ```
 Add built binaries to `~/.local/bin`.
+
+
