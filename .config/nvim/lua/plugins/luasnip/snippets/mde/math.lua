@@ -139,24 +139,22 @@ return {
     { condition = cond.letter_or_brackets_and_math }
   ),
   -- MINUS SUPERSCRIPT SHORTCUT
+  -- FIXME: CONDITIONS
+  -- s(
+  --   { trig = "%-%-", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+  --   fmta("^{<>}", {
+  --     t("-"),
+  --   }),
+  --   { condition = cond.letter_or_brackets_and_math }
+  -- ),
+  -- COMPLEMENT SUPERSCRIPT
   s(
-    { trig = "%-%-", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
+    { trig = "CC", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
     fmta("^{<>}", {
-      t("-"),
+      t("\\complement"),
     }),
     { condition = cond.letter_or_brackets_and_math }
   ),
-  -- COMPLEMENT SUPERSCRIPT
-  -- s(
-  -- 	{ trig = "([%a%)%]%}])CC", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-  -- 	fmta("<>^{<>}", {
-  -- 		f(function(_, snip)
-  -- 			return snip.captures[1]
-  -- 		end),
-  -- 		t("\\complement"),
-  -- 	}),
-  -- 	{ condition = cond.in_mathzone }
-  -- ),
   -- STAR SUPERSCRIPT SHORTCUT
   s(
     { trig = "%*%*", regTrig = false, wordTrig = false, snippetType = "autosnippet" },

@@ -23,7 +23,7 @@ bspc config pointer_action3           resize_corner
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
 bspc rule -a nvim-float state=floating rectangle=1000x200+460+950
-bspc rule -a Inkscape state=floating rectangle=1000x200+460+950
+bspc rule -a Inkscape state=floating
 
 # Natural scrolling
 xinput set-prop "DELL0CA9:00 27C6:0D53 Mouse" "libinput Natural Scrolling Enabled" 1
@@ -51,14 +51,17 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 0.1; done
 
 external_monitor=$(xrandr --query | grep 'HDMI-A-0')
 if [[ $external_monitor == *" connected"* ]]; then
-    xrandr \
-      --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x-500 --rotate normal \
-      --output eDP --mode 1920x1200 --pos -1920x0 --rotate inverted
-    bspc monitor "HDMI-A-0" -d 1 2 3 4 6 7 8 9
-    bspc monitor "eDP" -d 5
-    sleep 0.5
-    MONITOR=HDMI-A-0 polybar main &
-    MONITOR=eDP polybar external &
+    # xrandr \
+    #   --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x-500 --rotate normal \
+    #   --output eDP --mode 1920x1200 --pos -1920x0 --rotate inverted
+    # bspc monitor "HDMI-A-0" -d 1 2 3 4 6 7 8 9
+    # bspc monitor "eDP" -d 5
+    # sleep 0.5
+    # MONITOR=HDMI-A-0 polybar main &
+    # MONITOR=eDP polybar external &
+    xrandr --output eDP --off --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --off --output DisplayPort-3 --off --output DisplayPort-4 --off --output DisplayPort-5 --off
+    bspc monitor "HDMI-A-0" -d 1 2 3 4 5 6 7 8 9
+    sleep 0.5 && MONITOR=HDMI-A-0 polybar main &
 else
     xrandr --output eDP --auto --rotate normal
     bspc monitor -d 1 2 3 4 5 6 7 8 9
