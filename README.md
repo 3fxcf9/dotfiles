@@ -159,8 +159,73 @@ sudo pacman -S texlive-basic texlive-latex texlive-latexrecommended texlive-font
 # TODO: Add course_manager setup
 ```
 
-### Course manager
 
+### Power management
+
+```zsh
+sudo pacman -S tlp tlp-rdw
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
+```
+
+Customize in `/etc/tlp.conf`. Change `systemctl suspend-then-hibernate` delay in `/etc/systemd/sleep.conf`.
+
+- Suspend hook:
+  ```zsh
+  sudo mkdir -p /usr/lib/systemd/system-sleep
+  sudo nvim /usr/lib/systemd/system-sleep/10-s2idle-tune
+  ```
+  Content:
+  ```bash
+  #!/bin/bash
+  case "$1" in
+   pre)
+     # Before suspend
+     nmcli radio wifi off 2>/dev/null || true
+     systemctl stop syncthing.service 2>/dev/null || true
+     ;;
+   post)
+     # After resume
+     nmcli radio wifi on 2>/dev/null || true
+     systemctl start syncthing.service 2>/dev/null || true
+     ;;
+  esac
+  ```
+  ```zsh
+  sudo chmod +x /usr/lib/systemd/system-sleep/10-s2idle-tune
+  ```
+
+- Tune power button behavior in `/etc/systemd/logind.conf` (run `sudo systemctl restart systemd-logind` after edit)
+
+### Hibernation
+
+- ```zsh
+  sudo btrfs filesystem mkswapfile --size 16G /swapfile
+  swapon /swapfile
+  ```
+- Edit `/etc/systemd/system.conf.d/hibernate.conf` with
+  ```
+  [Sleep]
+  HibernateMode=platform
+  HibernateDelaySec=0
+  ```
+- Execute this command
+  ```zsh
+  root_uuid=$(sudo findmnt -no UUID /)
+  offset=$(sudo filefrag -v /swapfile | awk '$1=="0:" {print substr($4, 1, length($4)-1)}')
+  echo "systemd.resume=UUID=$root_uuid systemd.resume_offset=$offset"
+  ```
+  and add the result to the options line of `/boot/loader/entries/2025-08-18_11-26-04_linux.conf`.
+- Add the `resume` hook to `/etc/mkinitcpio.conf`.
+- Run
+  ```zsh
+  sudo mkinitcpio -P
+  sudo bootctl update
+  ```
+- Reboot
+
+
+### Course manager
 
 ```zsh
 # Figure manager

@@ -30,15 +30,15 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-	["<C-t>"] = function(fallback)
-              if require("luasnip").expandable() then
-                require("luasnip").expand()
-              elseif cmp.visible() then
-                cmp.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
-              else
-                fallback()
-              end
-            end,
+        ["<C-t>"] = function(fallback)
+          if require("luasnip").expandable() then
+            require("luasnip").expand()
+          elseif cmp.visible() then
+            cmp.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
+          else
+            fallback()
+          end
+        end,
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
         ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -47,16 +47,22 @@ return {
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
-        { name = "luasnip" }, -- snippets
-        { name = "nvim_lsp"},
-        { name = "nvim_lsp_document_symbol"},
-        { name = "nvim_lsp_signature_help"},
-        { name = "treesitter"},
-        { name = "path"},
-        { name = "calc"},
-        { name = "git"},
-        { name = "buffer" }, -- text within current buffer
+        { name = "nvim_lsp", priority = 1000 }, -- Force LSP to the top
+        -- { name = "luasnip", priority = 750 },
+        -- { name = "buffer", priority = 500 },
+        -- { name = "path", priority = 250 },
       }),
+      -- sources = cmp.config.sources({
+      --   { name = "luasnip" }, -- snippets
+      --   { name = "nvim_lsp" },
+      --   { name = "nvim_lsp_document_symbol" },
+      --   { name = "nvim_lsp_signature_help" },
+      --   { name = "treesitter" },
+      --   { name = "path" },
+      --   { name = "calc" },
+      --   { name = "git" },
+      --   { name = "buffer" }, -- text within current buffer
+      -- }),
 
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
@@ -67,8 +73,8 @@ return {
       },
 
       window = {
-	completion = cmp.config.window.bordered(),
-	documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
       },
     })
   end,

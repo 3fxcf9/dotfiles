@@ -6,6 +6,31 @@ return {
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
   },
+  -- config = function()
+  --   -- Inside your config function
+  --   local capabilities = require("cmp_nvim_lsp").default_capabilities()
+  --
+  --   -- The new way (0.11+)
+  --   vim.lsp.enable("ocamllsp") -- This is often required now to auto-start
+  --   vim.lsp.config("ocamllsp", {
+  --     capabilities = capabilities,
+  --     -- This forces the LSP to look for the dune-project file to define the workspace
+  --     root_dir = vim.fs.root(0, { "dune-project", ".git", "dune" }),
+  --     cmd = { "ocamllsp" },
+  --     filetypes = { "ocaml" },
+  --   })
+  --
+  --   -- Repeat for others
+  --   vim.lsp.enable("lua_ls")
+  --   vim.lsp.config("lua_ls", {
+  --     capabilities = capabilities,
+  --     settings = {
+  --       Lua = {
+  --         diagnostics = { globals = { "vim" } },
+  --       },
+  --     },
+  --   })
+  -- end,
   config = function()
     -- import cmp-nvim-lsp plugin
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -76,6 +101,9 @@ return {
 
     vim.lsp.config("*", {
       capabilities = capabilities,
+      settings = {
+        codelens = { enable = true },
+      },
     })
 
     vim.lsp.config("emmet_ls", {
@@ -88,24 +116,6 @@ return {
 
     vim.lsp.config("ocamllsp", {
       filetypes = { "ocaml" },
-    })
-
-    vim.lsp.config("v_analyzer", {
-      filetypes = { "v" },
-    })
-
-    vim.lsp.config("lua_ls", {
-      settings = {
-        Lua = {
-          -- make the language server recognize "vim" global
-          diagnostics = {
-            globals = { "vim" },
-          },
-          completion = {
-            callSnippet = "Replace",
-          },
-        },
-      },
     })
   end,
 }

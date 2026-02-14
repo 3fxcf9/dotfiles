@@ -10,7 +10,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_follows_pointer       true
 bspc config pointer_follows_focus true
-bspc config pointer_follows_monitor true
+bspc config pointer_follows_monitor false # Prevent the cursor from jumping to the center when switching desktops
 bspc config initial_polarity          second_child
 
 bspc config pointer_action1           move
@@ -22,8 +22,8 @@ bspc config pointer_action3           resize_corner
 # bspc rule -a mplayer2 state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
-bspc rule -a nvim-float state=floating rectangle=1000x200+460+950
-bspc rule -a Inkscape state=floating
+bspc rule -a nvim-float state=floating rectangle=1000x200+460+950 layer=above
+bspc rule -a Inkscape state=fullscreen
 
 # Natural scrolling
 xinput set-prop "DELL0CA9:00 27C6:0D53 Mouse" "libinput Natural Scrolling Enabled" 1

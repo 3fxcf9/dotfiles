@@ -34,7 +34,7 @@ return {
         "pyright",
         "eslint",
         "rust_analyzer",
-        "v_analyzer",
+        -- "v_analyzer",
         "ocamllsp",
       },
     })

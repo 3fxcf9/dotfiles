@@ -48,6 +48,30 @@ return {
     }),
     { condition = cond.in_mathzone }
   ),
+  -- BIG PARENTHESES
+  s(
+    { trig = "Bp", wordTrig = true, snippetType = "autosnippet" },
+    fmta("\\Big(<>\\Big)", {
+      d(1, get_visual),
+    }),
+    { condition = cond.in_mathzone }
+  ),
+  -- BIG SQUARE BRACES
+  s(
+    { trig = "Bq", wordTrig = true, snippetType = "autosnippet" },
+    fmta("\\Big[<>\\Big]", {
+      d(1, get_visual),
+    }),
+    { condition = cond.in_mathzone }
+  ),
+  -- BIG CURLY BRACES
+  s(
+    { trig = "Bc", wordTrig = true, snippetType = "autosnippet" },
+    fmta("\\Big\\{<>\\Big\\}", {
+      d(1, get_visual),
+    }),
+    { condition = cond.in_mathzone }
+  ),
   -- ESCAPED CURLY BRACES
   s(
     { trig = "\\%{", regTrig = true, wordTrig = true, snippetType = "autosnippet", priority = 2000 },

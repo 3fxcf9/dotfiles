@@ -327,7 +327,7 @@ return {
   ),
   -- DERIVATIVE with numerator, denominator, and higher-order argument
   s(
-    { trig = "dvN", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    { trig = "dvn", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
     fmta("\\dvN{<>}{<>}{<>}", {
       i(1),
       i(2),
@@ -354,7 +354,7 @@ return {
   ),
   -- PARTIAL DERIVATIVE with numerator, denominator, and higher-order argument
   s(
-    { trig = "pvN", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+    { trig = "pvn", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
     fmta("\\pdvN{<>}{<>}{<>}", {
       i(1),
       i(2),

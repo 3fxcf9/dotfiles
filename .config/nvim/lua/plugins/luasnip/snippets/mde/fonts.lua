@@ -31,6 +31,14 @@ return {
     }),
     { condition = cond.line_begin_or_non_letter_and_math }
   ),
+  -- MATH SCRIPT i.e. \mathscr
+  s(
+    { trig = "mss", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\mathscr{<>}", {
+      d(1, get_visual),
+    }),
+    { condition = cond.line_begin_or_non_letter_and_math }
+  ),
   -- MATH BOLDFACE i.e. \mathbf
   s(
     { trig = "mbf", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
