@@ -197,6 +197,22 @@ Customize in `/etc/tlp.conf`. Change `systemctl suspend-then-hibernate` delay in
 
 - Tune power button behavior in `/etc/systemd/logind.conf` (run `sudo systemctl restart systemd-logind` after edit)
 
+### Battery notifications
+
+```zsh
+sudo pacman -S acpi dunst
+chmod +x ~/.local/bin/battery-*
+systemctl --user daemon-reload
+systemctl --user enable battery-alert.timer
+systemctl --user start battery-alert.timer
+```
+
+Add this to `/etc/udev/rules.d/60-power.rules`:
+```
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/moi/.Xauthority" RUN+="/usr/bin/su moi -c '/home/moi/.local/bin/battery-charging discharging'"
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/moi/.Xauthority" RUN+="/usr/bin/su moi -c '/home/moi/.local/bin/battery-charging charging'"
+```
+
 ### Hibernation
 
 - ```zsh
